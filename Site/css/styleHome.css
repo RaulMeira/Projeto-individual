@@ -1,0 +1,74 @@
+body {
+    color: white;
+    margin: 0;
+    font-family: 'Candara';
+}
+
+
+/* HOME */
+
+
+.conteiner-home {
+    padding: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(assets/papel-de-parede-branco-cinza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(9,9,121,1) 40%, rgba(0,212,255,1) 100%); */
+    border-bottom: 0.5vh black solid;
+    border-bottom-left-radius: 10vh;
+    background: #11998e;  
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+    background: linear-gradient(to right, #38ef7d, #11998e); 
+    
+
+}
+
+.home {
+    font-size: 8vh;
+    background: linear-gradient(145deg, #57555a, #49474c);
+    box-shadow: 1vh 1vh 3vh #373639,
+        -9px -9px 18px #6b686f;
+    height: 12vh;
+    width: 35vw;
+    padding: 5vh 5vw;
+    border: 0.5vh rgb(0, 0, 0) solid;
+    border-radius: 3vh;
+
+}
+
+.conteiner-home2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh;
+    background-image: url(assets/papel-de-parede-relevo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-home {
+    background: #9b999f;
+    box-shadow: inset 16px 16px 32px #6b6a6e,
+        inset -16px -16px 32px #cbc8d0;
+    color: black;
+    height: 40vh;
+    width: 15vw;
+    padding: 5vh 5vw;
+    border: black solid 1vh;
+    border-radius: 3vh;
+    font-size: 5vh;
+}
+
+.card-home p {
+    margin-top: 1vh;
+}
+
+.card-home img {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    margin-left: 10vh;
+    margin-top: 0.1vh;
+}
