@@ -1,0 +1,67 @@
+body {
+    color: white;
+    margin: 0;
+    font-family: 'Candara';
+}
+
+.conteiner-login{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+   color: black;
+}
+.pega-tudo{
+    padding: 5vh 5vw;
+    display: flex;
+    justify-content:center;
+    height: 50vh;
+    width: 50vh;
+}
+.card-login{
+    height: 50vh;
+    width: 50vh;
+    background-color: green;
+}
+.imagem-login{
+    background-color: aqua;
+    height: 50vh;
+    width: 50vw;
+}
+.imagem-login img{
+    height: 10vh;
+}
+
+.alerta_erro{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+  
+  .card_erro {
+    display: none;
+    background-color: #fff;
+    color: black;
+    width: 230px;
+    /* position: fixed; */
+    border-radius: 4px;
+    border: #e6005a 3px solid;
+    padding: 10px;
+    margin-right: 10%;
+  }
+  
+  .card_erro #mensagem_erro{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+  }
+  
+  .loading-div img {
+    height: 50px;
+    width: 50px;
+  }

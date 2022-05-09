@@ -1,0 +1,130 @@
+body {
+    color: white;
+    margin: 0;
+    font-family: 'Candara';
+}
+
+a:hover {
+    opacity: .100;
+}
+
+.banner-cadastro {
+    background-image: url("assets/fundo-jogador.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: OCR A Std, monospace;
+}
+
+.conteiner-cadastro {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+.lado-cadastro {
+    height: 50vh;
+    width: 20vw;
+    background-color: rgb(115, 111, 111);
+    align-items: center;
+    text-align: center;
+    font-size: 5vh;
+    margin-top: 15vh;
+    margin-right: 5vw;
+    border: 0.5vh solid black;
+    border-radius: 5vh;
+    border-bottom-left-radius: 30vh;
+}
+
+.lado-cadastro p {
+    margin-top: 10vh;
+    font-size: 7vh;
+}
+
+.lado-cadastro img {
+    height: 5vh;
+    text-align: center;
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+
+.card-cadastro h1 {
+    margin-bottom: 1vh;
+}
+
+.card-cadastro {
+    color: black;
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    background: rgba(88, 88, 88, 0.151);
+    align-items: center;
+    backdrop-filter: blur(8.5vh);
+    -webkit-backdrop-filter: blur(8.5vh);
+    transition: all 0.8s;
+
+}
+
+.card-cadastro span {
+    margin-top: 2vh;
+}
+
+input {
+    padding: 0.8vh;
+    padding-left: 1vw;
+    margin-top: 0.5vh;
+    border: 0.3vh solid black;
+    border-radius: 1.5vh;
+}
+
+.card-cadastro a {
+    /* text-decoration: none; */
+    color: black;
+}
+
+.aviso {
+    color: white;
+    font-size: 30px;
+    height: 20px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.alerta_erro {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.card_erro {
+    display: none;
+    background-color: #fff;
+    color: black;
+    width: 230px;
+    /* position: fixed; */
+    border-radius: 4px;
+    border: #e6005a 3px solid;
+    padding: 10px;
+    margin-right: 10%;
+}
+
+.card_erro #mensagem_erro {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+}
+
+.loading-div img {
+    height: 50px;
+    width: 50px;
+}

@@ -1,0 +1,74 @@
+body {
+    color: white;
+    margin: 0;
+    font-family: 'Candara';
+}
+
+
+/* HOME */
+
+
+.conteiner-home {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("assets/campo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 120vh;
+
+
+}
+
+.home {
+    font-size: 9vh;
+    margin-top: 1vh;
+    font-family: OCR A Std, monospace;
+    color: black;
+    display: flex;
+    justify-content: center;
+
+}
+
+.conteiner-home2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh;
+    margin-top: 10vh;
+
+}
+
+.card-home {
+    background: #9b999f;
+    box-shadow: inset 16px 16px 32px #6b6a6e,
+        inset -16px -16px 32px #cbc8d0;
+    color: black;
+    height: 30vh;
+    width: 10vw;
+    padding: 5vh 5vw;
+    border: black solid 1vh;
+    border-radius: 8vh;
+    font-size: 5vh;
+    transition: all 0.8s;
+}
+
+/* animação */
+.card-home:hover {
+    transform: scale(1.1);
+    box-shadow: 1vh 1vh 1vh 1vh rgba(0, 0, 0, 0.35);
+
+}
+
+.card-home p {
+    margin-top: 1vh;
+}
+
+.card-home img {
+    position: relative;
+    width: 30%;
+    height: 25%;
+    margin-left: 10vh;
+    margin-top: 0.1vh;
+}
