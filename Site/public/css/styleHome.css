@@ -4,71 +4,93 @@ body {
     font-family: 'Candara';
 }
 
-
 /* HOME */
 
-
-.conteiner-home {
-
+.banner-home {
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-image: url("assets/campo.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;    
     height: 120vh;
 
-
 }
-
+.conteiner-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15vh;
+   
+}
 .home {
     font-size: 9vh;
-    margin-top: 1vh;
     font-family: OCR A Std, monospace;
     color: black;
     display: flex;
+    
     justify-content: center;
-
+    background-color: white;
+    width: 28vw;
+    text-align: center;
+    align-items: center;
+}
+.conteiner-home p{
+    font-size: 6vh;
 }
 
 .conteiner-home2 {
     display: flex;
     justify-content: space-between;
     padding: 5vh;
-    margin-top: 10vh;
+    margin-top: 1vh;
+
 
 }
 
 .card-home {
+    font-family: OCR A Std, monospace;
     background: #9b999f;
     box-shadow: inset 16px 16px 32px #6b6a6e,
         inset -16px -16px 32px #cbc8d0;
     color: black;
-    height: 30vh;
-    width: 10vw;
-    padding: 5vh 5vw;
+    height: 43vh;
+    width: 18vw;
+    padding: 2vh 1vw;
     border: black solid 1vh;
     border-radius: 8vh;
-    font-size: 5vh;
+    font-size: 3.4vh;
     transition: all 0.8s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
 /* animação */
 .card-home:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     box-shadow: 1vh 1vh 1vh 1vh rgba(0, 0, 0, 0.35);
 
 }
 
 .card-home p {
-    margin-top: 1vh;
+    margin-top: -4vh;
+    font-size: 5.2vh;
+    font-style: bold;
+    font-weight: 800;
 }
 
 .card-home img {
+    align-items: center;
     position: relative;
     width: 30%;
     height: 25%;
-    margin-left: 10vh;
-    margin-top: 0.1vh;
+    margin-left: 6vw;
+    margin-top: -3vh;
+    margin-bottom: 2vh;
+    
+    /* margin-left: 10vh;
+    margin-top: 0.1vh; */
 }
