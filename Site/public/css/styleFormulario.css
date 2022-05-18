@@ -11,6 +11,91 @@ body {
     background-image: url("assets/fundo-form.jpg");
     background-repeat: no-repeat;
     background-size: cover;    
-    height: 150vh;
+    height: 120vh;
+}
 
+.conteiner-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vh;
+    align-items: center;
+
+}
+
+.card-lado-form{
+    height: 30vh;
+    width: 25vw;
+    background-color: aqua;
+    align-items: center;
+    text-align: center;
+    border: 0.5vh solid aqua;
+    border-radius: 5vh;
+}
+
+.card-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30vw;
+    height: 60vh;
+    align-items: center;
+    /* background: rgba(88, 88, 88, 0.151); */
+    background: rgba(177, 176, 176, 0.151);
+    backdrop-filter: blur(8.5vh);
+    -webkit-backdrop-filter: blur(8.5vh);
+   
+}
+
+.card-form span{
+    margin-top: 1vh;
+    
+}
+
+
+
+input {
+    padding: 0.5vh 0.5vw;
+    border: solid 0.2vh black;
+    margin-top: 1vh;
+    width: 8vw;
+}
+
+::placeholder {
+    color: black;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 0.5vh;
+    padding: 0.5vh 0.5vw;
+    width: 13vw;
+    height: 5.7vh;
+    font-size: 2.5vh;
+    font-weight: 600;
+    border: 0.3vh black solid;
+    border-radius: 3vh;
+}
+
+button span {
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5vh;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 3vh;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
