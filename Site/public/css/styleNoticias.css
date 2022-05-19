@@ -1,0 +1,288 @@
+body {
+    color: white;
+    margin: 0;
+    font-family: 'Candara';
+}
+
+/* 1 LEVA DE NOTICIAS */
+
+.banner-noticias {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.titulo{
+    font-size: 10vh;
+    color: black;
+    text-align: center;
+    border: 0.1vh solid black;
+    border-bottom: none;
+    margin-bottom: 2vh;
+}
+
+.conteiner-noticias {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+}
+
+.coluna1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+    color: white;
+}
+
+.coluna1 {
+    background-image: url(assets/noticias/palmeiras-libertadores.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 400w;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticia2 {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 30vw;
+    background-image: url(assets/noticias/flamengo-unido.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.noticia3 {
+    background-image: url(assets/noticias/treino-corinthians.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 30vw;
+}
+
+.noticia3 p {
+    margin-top: 0;
+}
+
+.noticia4 {
+    background-image: url(assets/noticias/kaka-saopaulo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 30vw;
+
+}
+
+.noticia4 p {
+    margin-top: 0;
+}
+
+.noticia5 {
+    background-image: url(assets/noticias/goulart-santos.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 30vw;
+}
+
+.noticia5 p {
+    margin-top: 0;
+}
+
+.noticia1 p {
+    font-size: 5vh;
+    margin-top: 2vh;
+
+}
+
+.noticia1 span {
+    margin-bottom: 0;
+}
+
+/* NOTICIAS INTEIRAS */
+
+.noticia-inteira {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.noticia-inteira1 {
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    justify-content: flex-start;
+    margin-left: 10vw;
+}
+
+.foto-noticia {}
+
+.foto-noticia img {
+    height: 40vh;
+    width: 30vw;
+    border: 0.1vh solid transparent;
+    border-radius: 4vh;
+}
+
+.texto-noticia {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-left: 7vw;
+    margin-right: 3vw;
+}
+
+.texto-noticia p {
+    font-size: 6vh;
+    margin-top: -2vh;
+    font-weight: 800;
+    color: black;
+}
+
+.mini-texto{
+    display: flex;
+    flex-direction: column;
+    margin-top: -2vh;
+}
+
+.texto-noticia .autor {
+    color: green;
+}
+
+.mini-texto .resumo{
+    margin-top: 1vh;
+}
+
+.noticia-inteira2{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    justify-content: flex-start;
+    margin-left: 10vw;
+    
+}
+
+.texto-noticia a:hover{
+        opacity: .100;
+      
+}
+.texto-noticia a{
+    text-decoration: none;
+}
+
+/* 2 LEVA DE NOTICIAS */
+
+.titulo2{
+    font-size: 10vh;
+    color: black;
+    text-align: center;
+    border: 0.1vh solid black;
+    border-bottom: none;
+    margin-top: 15vh;
+    margin-bottom: 2vh;
+}
+
+.banner-noticias {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.titulo{
+    font-size: 10vh;
+    color: black;
+    text-align: center;
+    border: 0.1vh solid black;
+    border-bottom: none;
+    margin-bottom: 2vh;
+}
+
+.conteiner-noticias2 {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+}
+
+.coluna1-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+    color: white;
+}
+
+.coluna1-2{
+    background-image: url(assets/noticias/lewa-barca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 400w;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticia2-2 {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 30vw;
+    background-image: url(assets/noticias/flamengo-unido.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.noticia3-2 {
+    background-image: url(assets/noticias/treino-corinthians.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 30vw;
+}
+
+.noticia3-2 p {
+    margin-top: 0;
+}
+
+.noticia4-2 {
+    background-image: url(assets/noticias/kaka-saopaulo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 30vw;
+
+}
+
+.noticia4-2 p {
+    margin-top: 0;
+}
+
+.noticia5-2 {
+    background-image: url(assets/noticias/goulart-santos.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 30vw;
+}
+
+.noticia5-2 p {
+    margin-top: 0;
+}
+
+.noticia1-2 p {
+    font-size: 5vh;
+    margin-top: 2vh;
+
+}
+
+.noticia1-2 span {
+    margin-bottom: 0;
+}

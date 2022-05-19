@@ -70,7 +70,7 @@ body {
 
 /* animação */
 .card-home:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
     box-shadow: 1vh 1vh 1vh 1vh rgba(0, 0, 0, 0.35);
 
 }

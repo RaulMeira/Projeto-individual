@@ -66,3 +66,15 @@ li:hover::after{
     width: 100%;
     left: 0vw;
 }
+select {
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 10vw;
+    text-align: center;
+    font-size: 4vh;
+}
+option{
+    font-size: 2vh;
+}
