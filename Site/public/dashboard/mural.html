@@ -8,9 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AcquaTec | Avisos</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="./dashboards.css">
+    <!-- <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./dashboards.css"> -->
     <script src="../js/funcoes.js"></script>
+
+    <link rel="stylesheet" href="styleHeaderDash.css">
+    <link rel="stylesheet" href="styleMural.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -21,50 +24,56 @@
 <body onload="validarSessao(), atualizarFeed()" style="background-color: #161618;">
     <!-- <body onload="validarSessao()"> -->
 
-    <div class="janela">
+    <!-- HEADER -->
 
+    <div class="header">
 
-        <div class="header-left">
+        <h1>SOCCER LIFE</h1>
 
-            <h1>AcquaTec</h1>
+    </div>
+
+    <!-- MENU -->
+
+    <div class="banner">
+        <div class="menu">
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+                <h3><span id="b_email" >email</span></h3>
             </div>
 
-            <div class="btn-nav-white">
-                <a href="cards.html">
-                    <h3>Aquários</h3>
-                </a>
-            </div>
+            <div class="menu-itens">
+                <ul>
+                    <li class="agora"> <a href="">Debate</a></li>
+                    <li> <a href="graficos.html">Classificação</a></li>
+                    <li><a href="">Enquetes</a></li>
+                    <!-- <li> <a href="index.html">Sair</a></li> -->
+                    <div class="btn-logout" onclick="limparSessao()">
+                        <h3>Sair</h3>
+                    </div>
 
-            <div class="btn-nav-white">
-                <a href="./dashboard.html">
-                    <h3>Gráficos</h3>
-                </a>
-            </div>
-
-            <div class="btn-nav">
-                <h3>Mural de Avisos</h3>
-            </div>
-
-            <div class="btn-logout" onclick="limparSessao()">
-                <h3>Sair</h3>
+                </ul>
             </div>
 
         </div>
 
-        <div class="dash-right">
+
+
+
+
+
+        <div class="mural">
 
             <div class="avisos">
                 <div class="container">
-                    <h1>Publicar um aviso</h1>
+                    <h1>Publicar uma opinião </h1>
                     <div class="div-form">
                         <form id="form_postagem" method="post" onsubmit="return publicar()">
                             <label>
-                                Título:
+                                Tema:
                                 <br>
-                                <input name="titulo" id="titulo" maxlength="100" type="text">
+                                <input name="titulo" id="titulo" maxlength="100" type="text" autofocus>
+                                <br>
                             </label>
                             <br>
                             <label>
@@ -72,11 +81,14 @@
                                 <br>
                                 <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
                             </label>
-                            <br>
-                            <button>Enviar</button>
+                            <br><br>
+                            <button><span>Enviar</span> </button>
                         </form>
                     </div>
-                    <h1>Mural de Avisos</h1>
+
+                </div>
+                <div class="area-debate">
+                    <h1>Área de debate</h1>
                     <div class="div-results">
                         <div id="feed_container" class="feed-container">
                         </div>
@@ -104,9 +116,12 @@
         </div>
     </div>
 
-
-
-
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="rodape">
+            <h2>Feito com amor por um aluno SPTECH</h2>
+        </div>
+    </footer>
 </body>
 
 </html>
@@ -215,10 +230,10 @@
                         var btnDeletar = document.createElement("button");
 
 
-                        spanID.innerHTML = "ID: <b>" + publicacao.idAviso + "</b>";
-                        spanTitulo.innerHTML = "Título: <b>" + publicacao.titulo + "</b>";
-                        spanNome.innerHTML = "Autor: <b>" + publicacao.nome + "</b>";
-                        divDescricao.innerHTML = "Descrição: <b>" + publicacao.descricao + "</b>";
+                        spanID.innerHTML = "<br>ID: <b>" + publicacao.idAviso + "</b> <br>";
+                        spanTitulo.innerHTML = "Tema: <b>" + publicacao.titulo + "</b><br>";
+                        spanNome.innerHTML = "Nome: <b>" + publicacao.nome + "</b><br>";
+                        divDescricao.innerHTML = "Descrição: <b>" + publicacao.descricao + "</b><br><br>";
                         btnEditar.innerHTML = "Editar";
                         btnDeletar.innerHTML = "Deletar";
 

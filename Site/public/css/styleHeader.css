@@ -1,19 +1,18 @@
 /* cabeçalho de baixo */
 .header2{
     color: black;
-    height: 15vh;
-    font-size: 3vh;
     background-color: rgb(255, 255, 255);
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .conteiner-header2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     
 }
-.conteiner-header2 h1{
+.header2 h1{
     margin-left: 3vh;
+    font-size: 5vh;
 }
 
 .conteiner-header2 .header-listas2{
@@ -26,7 +25,7 @@
      
 }
 
-.header2 .conteiner-header2 img{
+.header2 img{
     height: 12vh;
     margin-left: 5vh;
 }
@@ -37,44 +36,32 @@
 
 ul a {
     text-decoration: none;
-    color: black
+    color: black;
+    text-transform: uppercase;
 }
 
 li {
     position: relative;
-    margin: auto;
+    margin: 0 20px;
+    display: inline-block;
+    transition:  0.5s;
 }
 
-li:hover {
-    /* opacity: .100; */
-    cursor: pointer;
-}
+
 li::after{
     position: absolute;
-    content: "";
+    content: '';
     width: 0%;
-    height: 1vh;
+    height: 3px;
     background-color:rgb(11, 108, 74);
-    /* left: 50vw; */
-    bottom: -2vh;
-    transition: all 0.5s;
-
+    bottom: -10px;
+    margin-left: 0;
 }
 
 li:hover::after{
-    cursor: pointer;
     width: 100%;
-    left: 0vw;
 }
-select {
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 10vw;
-    text-align: center;
-    font-size: 4vh;
-}
-option{
-    font-size: 2vh;
+li:hover {
+    /* opacity: .100; */
+    cursor: pointer;
 }
