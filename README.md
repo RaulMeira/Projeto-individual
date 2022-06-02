@@ -1,2 +1,0 @@
-# Projeto-individual
-Projeto individual 

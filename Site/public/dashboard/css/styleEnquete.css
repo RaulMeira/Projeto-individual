@@ -1,0 +1,74 @@
+.banner-enq{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    width: 90w;
+    height: max-content;
+    
+}
+
+/* ENQUETES */
+.conteiner-enq{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 80vw;
+}
+
+.pega-tudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+
+
+.escrita{
+    font-size: 2vh;
+    color: white;
+    text-align: center;
+}
+
+.imagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.foto_messi {
+    background-image: url("assets/messi-psg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 20vw;
+}
+
+.foto_neymar{
+    background-image: url("assets/neymar-psg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 20vw;
+}
+
+.foto_veiga{
+    background-image: url("assets/veiga.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 20vw;
+}
+.imagens button{
+    border: none;
+    cursor: pointer;
+}
+
+
+.votacao{
+    margin-top: 5vh;
+}

@@ -1,3 +1,13 @@
+.banner-menu{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(29, 30, 30);
+    width: 90w;
+    height: max-content;
+    
+}
+
+
 /* MURAL */
 .mural{
     width: 70vw;
@@ -5,6 +15,7 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 4vh;
+    align-items: center;
 }
 
 .avisos{
@@ -14,21 +25,23 @@
     flex-direction: column;
     align-items: center;
 }
-.container{
+.container-mural{
     
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 72vh;
-    width: 40vw;
+    height: 65vh;
+    width: 35vw;
     background-color: brown;
     align-items: center;
     text-align: center;
     margin-top: 2vh;
-    padding: 1vh 1vw;
+    padding: 0.5vh 0.5vw;
+    border: transparent 0.5vh solid;
+    border-radius: 5vh;
 }
-.container h1{
-    margin-top: 5vh;
+.container-mural h1{
+    margin-top: -5vh;
 }
 .div-form{
     display: flex;
@@ -86,11 +99,13 @@ button span {
 .area-debate{
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 35vw;
+    border: transparent 0.5vh solid;
+    border-radius: 5vh;
     background-color: blueviolet;
     text-align: center;
     margin-top: 2vh;
-    padding: 1vh 1vw;
+    padding: 0.5vh 0.5vw;
 }
 
 .feed-container{

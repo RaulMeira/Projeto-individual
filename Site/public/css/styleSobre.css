@@ -11,7 +11,8 @@ body {
     background-image: url("assets/fundo-sobreMim.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 150vh;
+    height: 180vh;
+    padding: 3vh;
 
 }
 
@@ -20,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .conteiner-sobre h1 {
@@ -30,7 +31,7 @@ body {
 .conteiner-sobre img {
     height: 31vh;
     width: 20vw;
-    border: 0.4vh solid black;
+    border: 1.5vh double black;
     border-radius: 3vh;
     transition: all 0.8s;
 }
@@ -50,9 +51,15 @@ body {
 }
 
 .texto {
-    font-size: 5vh;
+    font-size: 6vh;
     margin-top: 5vh;
     color: black;
+    font-family: Stencil Std, fantasy;
+    border: double black 1.2vh;
+    
+    background-color: white;
+   
+    padding: 1vh 0.5vw;
 }
 
 .fotos-medio {

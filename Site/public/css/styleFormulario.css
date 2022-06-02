@@ -5,16 +5,16 @@ body {
 }
 
 /* BANNER */
-.banner-form{
+.banner-form {
     display: flex;
     flex-direction: column;
     background-image: url("assets/fundo-form.jpg");
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
     height: 120vh;
 }
 
-.conteiner-form{
+.conteiner-form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -23,35 +23,53 @@ body {
 
 }
 
-.card-lado-form{
-    height: 30vh;
+.card-lado-form {
+    height: 25vh;
     width: 25vw;
-    background-color: aqua;
+    padding: 1vh 2vw;
     align-items: center;
     text-align: center;
-    border: 0.5vh solid aqua;
     border-radius: 5vh;
+    background: rgba(112, 112, 112, 0.151);
+    backdrop-filter: blur(8.5vh);
+    -webkit-backdrop-filter: blur(8.5vh);
+    box-shadow: inset 6px 6px 12px rgba(169, 169, 169, 0.151),
+        inset -6px -6px 12px rgba(210, 186, 186, 0.151);
 }
 
-.card-form{
+.card-lado-form p {
+    text-align: center;
+    font-family: Stencil Std, fantasy;
+    font-size: 4vh;
+}
+
+.card-lado-form:hover {
+    /* transform: scale(1.05); */
+    transition: 1s;
+    transform: rotate(7deg);
+    box-shadow: 1vh 1vh 1vh 1vh rgba(0, 0, 0, 0.35);
+}
+
+
+.card-form {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 30vw;
-    height: 60vh;
+    height: 65vh;
+    padding: 1vh 1vw;
     align-items: center;
-    /* background: rgba(88, 88, 88, 0.151); */
+    margin-top: 5vh;
     background: rgba(177, 176, 176, 0.151);
     backdrop-filter: blur(8.5vh);
     -webkit-backdrop-filter: blur(8.5vh);
-   
+
 }
 
-.card-form span{
+.card-form span {
     margin-top: 1vh;
-    
-}
 
+}
 
 
 input {
@@ -65,9 +83,11 @@ input {
     color: black;
 }
 
+/* BOTAO */
+
 button {
     cursor: pointer;
-    margin-top: 0.5vh;
+    margin-top: 2vh;
     padding: 0.5vh 0.5vw;
     width: 13vw;
     height: 5.7vh;

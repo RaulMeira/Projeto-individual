@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./dashboards.css"> -->
     <script src="../js/funcoes.js"></script>
 
-    <link rel="stylesheet" href="styleHeaderDash.css">
-    <link rel="stylesheet" href="styleMural.css">
+    <link rel="stylesheet" href="css/styleHeaderDash.css">
+    <link rel="stylesheet" href="css/styleMural.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -34,18 +34,19 @@
 
     <!-- MENU -->
 
-    <div class="banner">
+    <div class="banner-menu">
+
         <div class="menu">
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
-                <h3><span id="b_email" >email</span></h3>
+                
             </div>
 
             <div class="menu-itens">
                 <ul>
                     <li class="agora"> <a href="">Debate</a></li>
-                    <li> <a href="graficos.html">Classificação</a></li>
+                    <li> <a href="classificacao.html">Classificação</a></li>
                     <li><a href="enquetes.html">Enquetes</a></li>
                     <!-- <li> <a href="index.html">Sair</a></li> -->
                     <div class="btn-logout" onclick="limparSessao()">
@@ -58,12 +59,13 @@
         </div>
 
 
-<!-- MURAL -->
+            <!-- MURAL -->
 
         <div class="mural">
 
             <div class="avisos">
-                <div class="container">
+
+                <div class="container-mural">
                     <h1>Publicar uma opinião </h1>
                     <div class="div-form">
                         <form id="form_postagem" method="post" onsubmit="return publicar()">
@@ -85,32 +87,22 @@
                     </div>
 
                 </div>
+
                 <div class="area-debate">
+
                     <h1>Área de debate</h1>
+
                     <div class="div-results">
                         <div id="feed_container" class="feed-container">
                         </div>
                     </div>
+
                 </div>
             </div>
 
 
 
-
-            <!-- MODAL -->
-            <!-- <div id="div_modal" class="div-modal">
-                <div id="modal_backdrop" onclick="fecharModal()" class="modal-backdrop">
-                </div>
-                <div id="modal_container" class="modal-container">
-                    <button class="btn-fechar-modal" onclick="fecharModal()">X</button>
-                </div>
-            </div> -->
-
-            <!-- AGUARDAR -->
-            <!-- <div id="div_aguardar" class="div-aguardar">
-                <img src="./assets/aguarde-pink3.gif" id="img_aguarde">
-            </div>  -->
-
+            
         </div>
     </div>
 

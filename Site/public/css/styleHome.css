@@ -22,31 +22,43 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: -15vh;
+    font-size: Stencil Std, fantasy;
    
 }
 .home {
     font-size: 9vh;
-    font-family: OCR A Std, monospace;
+    font-family: Stencil Std, fantasy;
     color: black;
     display: flex;
-    
+    border: double black 1.5vh;
     justify-content: center;
     background-color: white;
     width: 28vw;
     text-align: center;
     align-items: center;
+    padding: 1vh 0.5vw;
 }
 .conteiner-home p{
     font-size: 6vh;
+    color: black;
+    background-color: white;
+    padding: 1vh 2vw;
+
+    /* border-radius: 5vh;
+    border: 0.5vh solid transparent; */
+    
+    /* border-top-left-radius: 50vh;
+    border-top-right-radius: 50vh; */
+
+    border-bottom: 1vh double black;
+
 }
 
 .conteiner-home2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 5vh;
     margin-top: 1vh;
-
-
 }
 
 .card-home {
@@ -72,7 +84,6 @@ body {
 .card-home:hover {
     transform: scale(1.05);
     box-shadow: 1vh 1vh 1vh 1vh rgba(0, 0, 0, 0.35);
-
 }
 
 .card-home p {

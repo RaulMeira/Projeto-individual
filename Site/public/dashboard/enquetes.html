@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styleEnquete.css">
 </head>
 
-<body>
+<body onload="validarSessao(), atualizarFeed()" style="background-color: #161618;">
     <!-- HEADER -->
     <div class="header">
 
@@ -19,19 +19,20 @@
     </div>
 
     <!-- MENU -->
-    <div class="banner">
+    <div class="banner-enq">
+
         <div class="menu">
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
-                <h3><span id="b_email">email</span></h3>
+
             </div>
 
             <div class="menu-itens">
                 <ul>
-                    <li class="agora"> <a href="">Debate</a></li>
-                    <li> <a href="graficos.html">Classificação</a></li>
-                    <li><a href="enquetes.html">Enquetes</a></li>
+                    <li> <a href="mural.html">Debate</a></li>
+                    <li> <a href="classificacao.html">Classificação</a></li>
+                    <li class="agora"><a href="enquetes.html">Enquetes</a></li>
                     <!-- <li> <a href="index.html">Sair</a></li> -->
                     <div class="btn-logout" onclick="limparSessao()">
                         <h3>Sair</h3>
@@ -41,18 +42,97 @@
             </div>
 
         </div>
-
         <!-- ENQUETE -->
+        <div class="conteiner-enq">
+
+            <div class="pegatudo">
+
+                <div class="escrita">
+                    <h1>VOTE AQUI PARA O MELHOR JOGADOR DE 2022</h1>
+                </div>
+
+                <div class="imagens">
+
+                    <div class="foto_messi"><input type="checkbox" id="messi_input"></div>
+                    <div class="foto_neymar"><input type="checkbox" id="neymar_input"></div>
+                    <div class="foto_veiga"><input type="checkbox" id="veiga_input"></div>
+
+                </div>
+
+                <div class="votacao">
+                    <button onclick="registrar()">Registrar voto</button>
+                </div>
+
+                <div class="resultado">
+
+                    <div class="contagem">
+                        <p>contagem atual de votos: <span id="votos">0</span></p>
+                        <p>votos no messi: <span id="votos_messi">0</span></p>
+                        <p>votos no neymar: <span id="votos_neymar">0</span></p>
+                        <p>votos no veiga: <span id="votos_veiga">0</span></p>
+                        <p id="por_enquanto"></p>
+                    </div>
+
+                    <div class="botao-final">
+                        <button onclick="resultado_final()">Saber o resultado</button>
+                        <p id="resultado"></p>
+                    </div>
 
 
+                </div>
+            </div>
 
-
-
-
-
+        </div>
 
     </div>
 
 </body>
 
 </html>
+
+<script>
+    var vt_votos = []
+    var voto_messi = []
+    var voto_neymar = []
+    var voto_veiga = []
+    var cont_messi = 0
+    var cont_neymar = 0
+    var cont_veiga = 0
+
+    var cont = 0
+
+    function registrar() {
+        var voto_messi = messi_input.value
+         var voto_neymar = neymar_input.value
+        var voto_veiga = veiga_input.value
+
+        if (voto_messi.checked == true) {
+            cont_messi += 1
+
+            voto_messi.push(1)
+        }
+        else {
+            if (voto_neymar.checked == true) {
+                cont_neymar += 1
+                voto_messi.push(1)
+            }
+            else {
+                if (voto_veiga.checked == true) {
+                    cont_veiga += 1
+                    voto_veiga.push(1)
+                }
+            }
+        }
+        vt_votos.push(1)
+        
+    }
+    
+
+    function resultado_final() {
+        for (var index = 0; index < vt_votos.length; index++) {
+            resultado = `O ${index} voto foi no `
+
+        }
+    }
+
+</script>

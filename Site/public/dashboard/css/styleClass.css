@@ -1,0 +1,57 @@
+.banner-clas{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    height: max-content;
+}
+
+/* ANALITYCS */
+.conteiner-class{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.analitycs{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 70vw;
+    margin-top: 5vh;
+    justify-content: space-evenly;
+
+}
+
+.card-z4{
+    height: 15vh;
+    background-color: red;
+    width: 10vw;
+}
+
+.card-nada{
+    height: 15vh;
+    background-color: rgb(79, 78, 78);
+    width: 10vw;
+}
+
+.card-sul{
+    height: 15vh;
+    background-color: rgb(141, 84, 37);
+    width: 10vw;
+}
+
+.card-pre{
+    height: 15vh;
+    background-color: rgb(255, 239, 20);
+    width: 10vw;
+}
+
+.card-g4{
+    height: 15vh;
+    background-color: rgb(0, 255, 76);
+    width: 10vw;
+}

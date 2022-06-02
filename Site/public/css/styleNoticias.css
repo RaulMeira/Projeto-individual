@@ -28,6 +28,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
+    padding: 1vh 1vw;
 
 }
 
@@ -35,15 +36,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 100vh;
     color: white;
+    margin-right: 1vw;
+    font-family: Stencil Std, fantasy;
+    color: black;
 }
 
 .coluna1 {
     background-image: url(assets/noticias/palmeiras-libertadores.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     width: 400w;
     display: flex;
     flex-direction: column;
@@ -58,6 +61,7 @@ body {
     background-image: url(assets/noticias/flamengo-unido.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 1vh;
 }
 
 .noticia3 {
@@ -103,10 +107,25 @@ body {
 
 }
 
-.noticia1 span {
-    margin-bottom: 0;
+.coluna2, .coluna3 p{
+    color: black;
+    font-family: Stencil Std, fantasy;
+}
+.conteiner-noticias span {
+    color: black;
+    font-family: Stencil Std, fantasy;
 }
 
+.coluna1 p{
+    margin-top: 50vh;
+    margin-left: 2vw;
+    color: rgb(13, 82, 4);
+}
+
+.coluna1 span{
+    margin-left: 2vw;
+    color: white;
+}
 /* NOTICIAS INTEIRAS */
 
 .noticia-inteira {
@@ -132,6 +151,7 @@ body {
     border: 0.1vh solid transparent;
     border-radius: 4vh;
 }
+
 
 .texto-noticia {
     display: flex;
