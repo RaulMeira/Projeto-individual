@@ -4,7 +4,7 @@ body {
     font-family: 'Candara';
 }
 
-a:hover {
+a img:hover {
     opacity: .100;
 }
 

@@ -1,0 +1,67 @@
+.conteiner-rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 0.5vh black;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-family: Stencil Std, fantasy;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape p{
+    color: black;
+}
+
+
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.insta, .face, .linkedin{
+    height: 8vh;
+    width: 2vw;
+    margin-right: 2vw;
+    padding: 1vh;
+    background-color: rgb(116, 116, 116);
+    border: 0.5vh solid transparent;
+    /* border-radius: 2vh; */
+    padding-right: 1.9vw;
+}
+
+.redes .insta:hover{
+    /* background-color: red;
+    opacity: .9; */
+    background: linear-gradient(10deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D);
+    /* background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  */
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); */
+}
+
+.redes .face:hover{ 
+    background-color:  #3b5998;
+    opacity: .9;
+}
+
+.redes .linkedin:hover{
+    background-color: #0e76a8;
+    opacity: 9;
+}
+.imagem{
+    margin-right: 10vw;
+}
+

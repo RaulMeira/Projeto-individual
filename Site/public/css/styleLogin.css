@@ -20,6 +20,7 @@ body {
   align-items: center;
   color: black;
   margin-top: 5vh;
+  font-family: Stencil Std, fantasy;
 }
 
 .pega-tudo {
@@ -31,14 +32,14 @@ body {
 }
 
 .card-login {
-  height: 55vh;
+  height: 45vh;
   width: 50vh;
   background: #11998e;
-  /* fallback for old browsers */
+
   background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
-  /* Chrome 10-25, Safari 5.1-6 */
+
   background: linear-gradient(to right, #38ef7d, #11998e);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
   text-align: center;
   align-items: center;
@@ -52,17 +53,8 @@ body {
 input {
   margin-top: -20vh;
   padding: 0.5vh 0.5vw;
-  border-bottom: solid 0.2vh black;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  background: #11998e;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #38ef7d, #11998e);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  border: solid 0.2vh black;
+  background-color: white;
   color: black;
 }
 
@@ -107,12 +99,33 @@ button:hover span:after {
 
 .card-login-lado {
   height: 40vh;
-  width: 25vw;
-  background-color: aquamarine;
+  width: 20vw;
+  padding: 1vh 1vw;
+  background: #ffffff, 0.6;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   text-align: center;
-
-
+  color: rgb(41, 37, 37);
 }
+
+/* :#4B633B, */
+
+.card-login-lado h2 {
+  font-family: Stencil Std, fantasy;
+}
+
+.card-login-lado a {
+  color: white;
+}
+
+.card-login-lado p {
+  font-size: 2.8vh;
+}
+
+.card-login-lado:hover {}
 
 /* ERRO */
 .alerta_erro {

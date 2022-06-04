@@ -9,44 +9,49 @@
 /* ANALITYCS */
 .conteiner-class{
     display: flex;
-    flex-direction: column;
-    height: 80vh;
+    flex-direction: row;
+    height: max-content;
     width: 70vw;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
 }
 
 .analitycs{
     display: flex;
-    flex-direction: row;
-    height: 80vh;
-    width: 70vw;
-    margin-top: 5vh;
-    justify-content: space-evenly;
+    flex-direction: column;
+    height: 20vh;
+    width: 30vw;
+    
+    margin-left: 5vw;
 
 }
-
+ 
+/* cards */
 .card-z4{
-    height: 15vh;
+    height: 18vh;
     background-color: red;
-    width: 10vw;
-}
-
-.card-nada{
-    height: 15vh;
-    background-color: rgb(79, 78, 78);
-    width: 10vw;
+    width: 12vw;
+    margin-top: -45vh;
+    text-align: center;
+    padding: 0.5vh 0.5vw;
+    align-items: center;
 }
 
 .card-sul{
-    height: 15vh;
-    background-color: rgb(141, 84, 37);
-    width: 10vw;
+    margin-top: 3vh;
+    
+    height: 18vh;
+    background-color: rgb(255, 221, 0);
+    width: 12vw;
+    
+    text-align: center;
+    padding: 0.5vh 0.5vw;
+    align-items: center;
 }
 
 .card-pre{
     height: 15vh;
-    background-color: rgb(255, 239, 20);
+    background-color: rgb(9, 255, 0);
     width: 10vw;
 }
 
@@ -54,4 +59,75 @@
     height: 15vh;
     background-color: rgb(0, 255, 76);
     width: 10vw;
+}
+
+/* CLASSIFICAÇÃO */
+
+.classificacao{
+    padding: 1vh 1w;
+    margin-left: 13vw;
+}
+
+table{
+    width: 50vw;
+    margin-top: 5vh;
+    height: 100vh;
+    font-size: 2.5vh;
+}
+
+table img{
+    height: 4vh;
+    /* margin-top: 0.1vh; */
+    margin-right: 0.4vw;
+    margin-left: -2vw;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -1vh;
+}
+
+table span{
+    margin-bottom: 5vh;
+}
+
+
+table, td {
+    border: 1px solid;
+}
+
+.nada {
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+
+}
+
+.time{
+    border-left: none;
+}
+
+table tr{
+    margin-top: 5vh;
+    text-align: center;
+}
+
+td{
+    padding: 1vh 0.5vw;
+    text-align: center;
+}
+
+
+.g4{
+    background-color: rgb(2, 71, 2);
+}
+
+.pre{
+    background-color: rgb(9, 255, 0);
+}
+.sula{
+    background-color: rgb(255, 221, 0);
+}
+.z4{
+    background-color: rgb(255, 0, 0);
+
 }

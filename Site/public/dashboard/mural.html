@@ -63,6 +63,7 @@
 
         <div class="mural">
 
+
             <div class="avisos">
 
                 <div class="container-mural">
@@ -77,9 +78,9 @@
                             </label>
                             <br>
                             <label>
-                                Descrição (máximo de 250 caracteres):
+                                Fale!(máximo de 300 caracteres):
                                 <br>
-                                <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
+                                <textarea name="descricao" id="textarea_descricao" maxlength="300" rows="5"></textarea>
                             </label>
                             <br><br>
                             <button><span>Enviar</span> </button>
@@ -141,7 +142,7 @@
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                window.alert("Post realizado com sucesso pelo usuario de ID: " + idUsuario + "!");
+                window.alert("Opinião realizado com sucesso pelo usuario de ID: " + idUsuario + "!");
                 window.location = "/dashboard/mural.html";
                 limparFormulario();
                 finalizarAguardar();
@@ -220,7 +221,7 @@
                         var btnDeletar = document.createElement("button");
 
 
-                        spanID.innerHTML = "<br>ID: <b>" + publicacao.idAviso + "</b> <br>";
+                        spanID.innerHTML = "<br>Aviso: <b>" + publicacao.idAviso + "</b> <br>";
                         spanTitulo.innerHTML = "Tema: <b>" + publicacao.titulo + "</b><br>";
                         spanNome.innerHTML = "Nome: <b>" + publicacao.nome + "</b><br>";
                         divDescricao.innerHTML = "Descrição: <b>" + publicacao.descricao + "</b><br><br>";

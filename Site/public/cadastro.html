@@ -20,13 +20,13 @@
             <h1>Soccer Life</h1>
             <ul class="header-listas2">
 
-                <li class="animation"><a href="index.html">HOME</a></li>
-                <li><a href="sobremim.html">Sobre mim</a></li>
-                <li><a href="formulario.html">Formulário</a> </li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li> <a href="login.html"><span>Login </span></a></li>
-                <li> <a href="#"><span>|</span></a></li>
-                <li class="agora"> <a href="cadastro.html"> <span> Cadastro </span></a></li>
+                <li><a href="index.html" class="a">HOME</a></li>
+                <li><a href="sobremim.html" class="a">Sobre mim</a></li>
+                <li><a href="formulario.html" class="a">Formulário</a> </li>
+                <li><a href="noticias.html" class="a">Noticias</a></li>
+                <li> <a href="login.html" class="a"><span>Login </span></a></li>
+                <li> <a href="#" class="a"><span>|</span></a></li>
+                <li class="agora"> <a href="cadastro.html" class="a"> <span> Cadastro </span></a></li>
                 
             </ul>
         </div>
@@ -57,8 +57,8 @@
                 <input type="text" placeholder="insira seu nome" autofocus id="nome_input">
                 <span>CPF</span>
                 <input type="text" placeholder="xxx.xxx.xxx-xx" id="cpf_input">
-                <span>Telefone</span>
-                <input type="text" placeholder="xxxxxxxxxxx" id="tel_input">
+    
+                <!-- <input type="text" placeholder="xxxxxxxxxxx" id="tel_input"> -->
                 <span>Email</span>
                 <input type="email" placeholder="usuario@email.com" id="email_input">
                 <span>Senha</span>
@@ -66,6 +66,15 @@
                 <span>Confirmar senha</span>
                 <input type="password" placeholder="confirme sua senha" id="senha_confirmacao_input">
                 <br>
+
+                Selecione o seu jogador favorito:
+                <select name="" id="jog_input">
+                    <option value="-">--</option>
+                    <option value="messi">Messi</option>
+                    <option value="neymar">Neymar</option>
+                    <option value="veiga">Veiga</option>
+
+                </select>
                 <button onclick="cadastrar()" class="botao"> <span> Junte-se a nós </span></button>
                 <br>
                
@@ -81,8 +90,6 @@
                 </div>
 
             </div>
-
-
 
         </div>
 
@@ -100,12 +107,13 @@
         // Agora vá para o método fetch logo abaixo
         var nomeVar = nome_input.value;
         var cpfVar = cpf_input.value;
-        var telVar = tel_input.value;
+        // var telVar = tel_input.value;
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = senha_confirmacao_input.value;
+        var jogVar = jog_input.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || jogVar == "-") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir!";
 
@@ -147,9 +155,10 @@
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
                 cpfServer: cpfVar,
-                telServer: telVar,
+                // telServer: telVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar
+                senhaServer: senhaVar,
+                jogServer: jogVar
             })
         }).then(function (resposta) {
 

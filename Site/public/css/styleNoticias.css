@@ -22,6 +22,7 @@ body {
     border-left: none;
     border-right: none;
     margin-bottom: 2vh;
+    font-family: Stencil Std, fantasy;
 }
 
 .conteiner-noticias {
@@ -32,100 +33,173 @@ body {
 
 }
 
-.coluna1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
-    margin-right: 1vw;
-    font-family: Stencil Std, fantasy;
-    color: black;
-}
+/* coluna 1 */
 
 .coluna1 {
-    background-image: url(assets/noticias/palmeiras-libertadores.webp);
+    margin-right: 2vw;
+    
+}
+
+.noticia1 {
+    display: flex;
+    font-family: Stencil Std, fantasy;
+    background-image: linear-gradient(rgba(0,0,0,0.415), rgba(0,0,0,0.500)),  url(assets/noticias/palmeiras-libertadores.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
-    width: 400w;
-    display: flex;
+    width: 30vw;
     flex-direction: column;
+    
 }
 
+.coluna1 .textinho {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45vh;
+    margin-left: 2vw; 
+    padding: 0.1vh 2vw;
+}
+
+.noticia1 p{
+    color: rgb(29, 213, 5);
+    font-size: 5vh;
+}
+
+.noticia1 span{
+    margin-bottom: 2vh;
+    font-size: 3vh;
+
+}
+
+.noticia:hover {
+    transform: scale(0.9);
+    /* transition: 1s; */
+    /* transform: rotate(7deg); */
+    box-shadow: 1vh 1vh 1vh 1vh rgba(0, 0, 0, 0.35);
+}
+
+
+/* coluna 2 */
+
+.coluna2{
+    margin-right: 2vw;
+    font-family: Stencil Std, fantasy;
+}
+
+.coluna2 .textinho {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 45vh; */
+    margin-left: 2vw;
+    padding: 0.1vh 2vw;
+}
+
+/* noticia 2 */
+.noticia2 .textinho {
+    margin-top: 15vh;
+}
+
+.noticia2 p{
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+}
+.noticia2 span {
+    color: rgb(252, 72, 72);
+    font-size: 2.5vh;
+}
 
 .noticia2 {
     display: flex;
     flex-direction: column;
-    height: 35vh;
+    height: 38vh;
     width: 30vw;
-    background-image: url(assets/noticias/flamengo-unido.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.415), rgba(0,0,0,0.500)),url(assets/noticias/flamengo-unido.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 1vh;
+    
 }
 
+/* noticia 3 */
 .noticia3 {
-    background-image: url(assets/noticias/treino-corinthians.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.415), rgba(0,0,0,0.500)), url(assets/noticias/treino-corinthians.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh;
+    height: 38vh;
     width: 30vw;
+    margin-top: 4vh;
 }
 
-.noticia3 p {
-    margin-top: 0;
+.noticia3 p{
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+    margin-top: 18vh;
+}
+.noticia3 span {
+    color: rgb(223, 223, 223);
+    font-size: 2.5vh;
 }
 
+/* coluna 3 */
+
+.coluna3{
+    margin-right: 2vw;
+    font-family: Stencil Std, fantasy;
+}
+
+.coluna3 .textinho {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    padding: 0.1vh 2vw;
+}
+
+/* noticia 4 */
 .noticia4 {
-    background-image: url(assets/noticias/kaka-saopaulo.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.415), rgba(0,0,0,0.500)), url(assets/noticias/kaka-saopaulo.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh;
+    height: 38vh;
     width: 30vw;
 
 }
 
-.noticia4 p {
-    margin-top: 0;
+.noticia4 p{
+    color: rgb(255, 2, 2);
+    font-size: 3vh;
+    margin-top: 15vh;
+    
+}
+.noticia4 span {
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
 }
 
+
+/* noticia 5 */
 .noticia5 {
-    background-image: url(assets/noticias/goulart-santos.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.415), rgba(0,0,0,0.500)), url(assets/noticias/goulart-santos.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh;
+    height: 38vh;
     width: 30vw;
+    margin-top: 4vh;
+   
 }
 
-.noticia5 p {
-    margin-top: 0;
+.noticia5 p{
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+    margin-top: 15vh;
+    
+}
+.noticia5 span {
+    color: rgb(223, 223, 223);;
+    font-size: 2.5vh;
 }
 
-.noticia1 p {
-    font-size: 5vh;
-    margin-top: 2vh;
 
-}
+/* ================================================================================================= */
 
-.coluna2, .coluna3 p{
-    color: black;
-    font-family: Stencil Std, fantasy;
-}
-.conteiner-noticias span {
-    color: black;
-    font-family: Stencil Std, fantasy;
-}
-
-.coluna1 p{
-    margin-top: 50vh;
-    margin-left: 2vw;
-    color: rgb(13, 82, 4);
-}
-
-.coluna1 span{
-    margin-left: 2vw;
-    color: white;
-}
 /* NOTICIAS INTEIRAS */
 
 .noticia-inteira {
@@ -143,7 +217,7 @@ body {
     margin-left: 10vw;
 }
 
-/* .foto-noticia {} */
+
 
 .foto-noticia img {
     height: 40vh;
@@ -153,25 +227,21 @@ body {
 }
 
 
-.texto-noticia {
-    display: flex;
-    flex-direction: column;
-    color: black;
-    margin-left: 7vw;
-    margin-right: 3vw;
-}
-
-.texto-noticia p {
-    font-size: 6vh;
-    margin-top: -2vh;
+.texto-noticia{
+    margin-top: -6vh;
+    margin-left: 2vw;
+    color: rgb(13, 82, 4);
     font-weight: 800;
-    color: black;
+    padding: 1vh 5vw;
+    
 }
 
 .mini-texto {
     display: flex;
     flex-direction: column;
     margin-top: -2vh;
+    padding: 1vh 1vw;
+    margin-left: -1vw;
 }
 
 .texto-noticia .autor {
@@ -180,6 +250,7 @@ body {
 
 .mini-texto .resumo {
     margin-top: 1vh;
+    
 }
 
 .noticia-inteira2 {
@@ -199,7 +270,11 @@ body {
 
 .texto-noticia a {
     text-decoration: none;
+    font-size: 5vh;
+    color: black
 }
+
+/* ========================================================================================================= */
 
 /* 2 LEVA DE NOTICIAS */
 
@@ -220,86 +295,177 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    
 }
 
 .conteiner-noticias2 {
     display: flex;
     flex-direction: row;
     height: 100vh;
+    padding: 1vh 1vw;
 
 }
 
+
 .coluna1-2 {
+    margin-right: 2vw;
+    
+}
+
+.noticia1-2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 100vh;
-    color: white;
-}
-
-.coluna1-2 {
-    background-image: url(assets/noticias/lewa-barca.jpg);
+    font-family: Stencil Std, fantasy;
+    background-image: linear-gradient(rgba(0,0,0,0.415), rgba(0,0,0,0.500)),  url(assets/noticias/lewa-barca.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
-    width: 400w;
+    height: 80vh;
+    width: 30vw;
+    flex-direction: column;
+    
+}
+
+.coluna1-2 .textinho {
     display: flex;
     flex-direction: column;
+    margin-top: 30vh;
+    margin-left: 2vw;
+    padding: 0.1vh 2vw;
+}
+
+.noticia1-2 p{
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+}
+
+.noticia1-2 span{
+    margin-bottom: 2vh;
+    font-size: 3vh;
+    color: red;
+
+}
+
+.noticia:hover {
+    transform: scale(0.9);
+    /* transition: 1s; */
+    /* transform: rotate(7deg); */
+    box-shadow: 1vh 1vh 1vh 1vh rgba(0, 0, 0, 0.35);
+}
+
+
+/* coluna 2 */
+
+.coluna2-2{
+    margin-right: 2vw;
+    font-family: Stencil Std, fantasy;
+}
+
+.coluna2-2 .textinho {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 45vh; */
+    margin-left: 2vw;
+    padding: 0.1vh 2vw;
+}
+
+/* noticia 2 */
+.noticia2-2 .textinho {
+    margin-top: 15vh;
+}
+
+.noticia2-2 p{
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+}
+.noticia2-2 span {
+    color: rgb(169, 174, 255);
+    font-size: 2.5vh;
 }
 
 .noticia2-2 {
     display: flex;
     flex-direction: column;
-    height: 35vh;
+    height: 38vh;
     width: 30vw;
-    background-image: url(assets/noticias/flamengo-unido.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.415), rgba(0,0,0,0.500)),url(assets/noticias/rudiger-real.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
+/* noticia 3 */
 .noticia3-2 {
-    background-image: url(assets/noticias/treino-corinthians.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.415), rgba(0,0,0,0.500)), url(assets/noticias/pique-shakira.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh;
+    height: 38vh;
     width: 30vw;
+    margin-top: 4vh;
 }
 
-.noticia3-2 p {
-    margin-top: 0;
+.noticia3-2 p{
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+    margin-top: 18vh;
+}
+.noticia3-2 span {
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
 }
 
+/* coluna 3 */
+
+.coluna3-2{
+    margin-right: 2vw;
+    font-family: Stencil Std, fantasy;
+}
+
+.coluna3-2 .textinho {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    padding: 0.1vh 2vw;
+}
+
+/* noticia 4 */
 .noticia4-2 {
-    background-image: url(assets/noticias/kaka-saopaulo.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.415), rgba(0,0,0,0.500)), url(assets/noticias/pogba-united.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh;
+    height: 38vh;
     width: 30vw;
 
 }
 
-.noticia4-2 p {
-    margin-top: 0;
+.noticia4-2 p{
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+    margin-top: 15vh;
+    
+}
+.noticia4-2 span {
+    color: rgb(255, 2, 2);
+    font-size: 2.5vh;
 }
 
+
+/* noticia 5 */
 .noticia5-2 {
-    background-image: url(assets/noticias/goulart-santos.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.415), rgba(0,0,0,0.500)), url(assets/noticias/psg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh;
+    height: 38vh;
     width: 30vw;
+    margin-top: 4vh;
+   
 }
 
-.noticia5-2 p {
-    margin-top: 0;
+.noticia5-2 p{
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+    margin-top: 15vh;
+    
 }
-
-.noticia1-2 p {
-    font-size: 5vh;
-    margin-top: 2vh;
-
-}
-
-.noticia1-2 span {
-    margin-bottom: 0;
+.noticia5-2 span {
+    color: rgb(115, 122, 250);
+    font-size: 2.5vh;
 }

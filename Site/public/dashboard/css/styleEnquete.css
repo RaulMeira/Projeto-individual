@@ -11,7 +11,7 @@
 .conteiner-enq{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: max-content;
     width: 80vw;
 }
 
@@ -25,9 +25,22 @@
 }
 
 
+/* cards */
+.jog-fav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card-messi{
+    height: 25vh;
+    background-color: aqua;
+    width: 15vw
+}
+
+
 .escrita{
     font-size: 2vh;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 

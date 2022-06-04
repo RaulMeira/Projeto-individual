@@ -9,19 +9,21 @@ body{
     height: 15vh;
     display: flex;
     justify-content: center;
+    font-family: Stencil Std, fantasy;
 }
 
 .header h1{
 font-size: 5vh;
 color: white;
-font-size: Andale Mono, monospace;
+/* font-size: Andale Mono, monospace; */
 }
 
 
 .menu{
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 15vw;
+    height: 100vh;
     background-color: rgb(29, 30, 30);
     text-align: center;
     align-items: center;
@@ -30,12 +32,13 @@ font-size: Andale Mono, monospace;
     border-left: none;
     border-top: none;
     border-bottom: none;
-    color: white;
-    font-size: Andale Mono, monospace;
+    color: rgb(205, 202, 202);
+    font-family: Stencil Std, fantasy;
+    /* font-size: Andale Mono, monospace; */
 }
 
 .hello{
-    font-size: 4vh;
+    font-size: 3vh;
     margin-bottom: 1vh;
     margin-top: 1vh;
 }
@@ -49,11 +52,11 @@ a:hover {
 list-style: none;
 }
 .menu ul{
-    font-size: 5vh;
+    font-size: 4vh;
 }
 li a{
     text-decoration: none;
-    color: white;
+    color: rgb(205, 202, 202);
 }
 .menu-itens{
     display: flex;
@@ -61,6 +64,7 @@ li a{
     justify-content: center;
     align-items: center;
     margin-right: 10vh;
+    
 }
 .menu-itens li{
     margin-top: 4vh;
@@ -68,5 +72,5 @@ li a{
 
 
 .agora{
-    font-weight: 800;
+    font-weight: 600;
 }
