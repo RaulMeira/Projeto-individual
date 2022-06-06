@@ -24,8 +24,10 @@ function buscarUltimasMedidas(idAquario, limite_linhas) {
     //                 order by id desc limit ${limite_linhas}`;
 
     } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
-        instrucaoSql = `
-        select votacao.nomeJogador as jogador, count(fkjogador) as contagem from usuario join votacao on fkjogador = idvotacao
+        instrucaoSql = 
+//         `select votacao.nomeJogador as jogador, count(fkjogador) as contagem from usuario join votacao on fkjogador = idvotacao
+// group by nomeJogador order by nomeJogador;`;
+`select jogador.nomeJogador as jogador, count(fkjogador) as contagem from usuario join jogador on usuario.fkjogador = jogador.idJogador
 group by nomeJogador order by nomeJogador;`;
 
     } else {

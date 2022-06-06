@@ -3,6 +3,7 @@ body{
     background-color: white;
     margin: 0;
     font-size: Andale Mono, monospace;
+    
 }
 .header {
     background-color: rgb(0, 0, 0);
@@ -36,7 +37,9 @@ margin-right: 0.6vh;
     flex-direction: column;
     width: 16vw;
     height: auto;
-    background-color: rgb(47, 48, 48);
+    background: #242424; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #242424, #086c08); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #242424, #086c08); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
     align-items: center;
     padding: 1vh 0.5vw;

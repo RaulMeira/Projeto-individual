@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="css/styleHeaderDash.css">
     <link rel="stylesheet" href="css/styleMural.css">
+    <link rel="stylesheet" href="css/styleFooter.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -21,7 +22,7 @@
         rel="stylesheet">
 </head>
 
-<body onload="validarSessao(), atualizarFeed()" style="background-color: #161618;">
+<body onload="validarSessao(), atualizarFeed()">
     <!-- <body onload="validarSessao()"> -->
 
     <!-- HEADER -->
@@ -34,6 +35,7 @@
 
     <!-- MENU -->
 
+    <!-- <div class="tudo-mural"> -->
     <div class="banner-menu">
 
         <div class="menu">
@@ -45,9 +47,10 @@
 
             <div class="menu-itens">
                 <ul>
-                    <li class="agora"> <a href=""> <img src="css/assets/icone-debate.png" alt="">  Debate</a></li>
-                    <li> <a href="classificacao.html"> <img src="css/assets/icone-podio.png" alt="">  Classificação</a></li>
-                    <li><a href="enquetes.html"> <img src="css/assets/icone-enquete.png" alt="">  Enquetes</a></li>
+                    <li class="agora"> <a href=""> <img src="css/assets/icone-debate.png" alt=""> Debate</a></li>
+                    <li> <a href="classificacao.html"> <img src="css/assets/icone-podio.png" alt="">
+                            Classificação</a></li>
+                    <li><a href="enquetes.html"> <img src="css/assets/icone-enquete.png" alt=""> Enquetes</a></li>
                     <!-- <li> <a href="index.html">Sair</a></li> -->
                     <div class="btn-logout" onclick="limparSessao()">
                         <h3>Sair</h3>
@@ -116,14 +119,49 @@
 
 
         </div>
+
+
     </div>
 
-    <!-- RODAPÉ -->
     <footer>
-        <div class="rodape">
-            <h2>Feito com amor por um aluno SPTECH</h2>
+
+        <div class="conteiner-rodape">
+
+            <div class="rodape">
+
+                <p>Projeto feito com amor por: Raul Meira de Souza</p>
+
+                <div class="conteudo">
+
+                    <p>Me siga nas redes sociais</p>
+
+                    <div class="redes">
+
+                        <div class="insta"><a href="https://www.instagram.com/_raulmz/" class="imagem"><img
+                                    src="css/assets/icone-instagram.png" alt=""></a></div>
+
+                        <div class="face"><a href="https://www.facebook.com/raul.meira2/" class="imagem"><img
+                                    src="css/assets/icone-facebook.jpg" alt=""></a></div>
+
+                        <div class="linkedin"><a href="https://www.linkedin.com/in/raul-meira-de-souza-3180b61b2/"
+                                class="imagem"><img src="css/assets/icone-linkedin.png" alt=""></a></div>
+
+                        <div class="github"> <a href="https://github.com/RaulMeira" class="imagem"> <img
+                                    src="css/assets/icone-github.png" alt="">
+                            </a></div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
+
     </footer>
+
+
+
 </body>
 
 </html>

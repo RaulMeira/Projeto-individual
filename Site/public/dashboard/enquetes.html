@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styleHeaderDash.css">
     <link rel="stylesheet" href="css/styleEnquete.css">
+    <link rel="stylesheet" href="css/styleFooter.css">
 
     <script type="text/javascript" src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
 
@@ -22,118 +23,161 @@
     </div>
 
     <!-- MENU -->
-    <div class="banner-enq">
+    <div class="tudo-enq">
+        <div class="banner-enq">
 
-        <div class="menu">
+            <div class="menu">
 
-            <div class="hello">
-                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+                <div class="hello">
+                    <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+
+                </div>
+
+                <div class="menu-itens">
+                    <ul>
+                        <li> <a href="mural.html"> <img src="css/assets/icone-debate.png" alt=""> Debate</a></li>
+                        <li> <a href="classificacao.html"> <img src="css/assets/icone-podio.png" alt="">
+                                Classificação</a>
+                        </li>
+                        <li class="agora"><a href="enquetes.html"> <img src="css/assets/icone-enquete.png" alt="">
+                                Enquetes</a></li>
+                        <!-- <li> <a href="index.html">Sair</a></li> -->
+                        <div class="btn-logout" onclick="limparSessao()">
+                            <h3>Sair</h3>
+                        </div>
+
+                    </ul>
+                </div>
 
             </div>
 
-            <div class="menu-itens">
-                <ul>
-                    <li> <a href="mural.html"> <img src="css/assets/icone-debate.png" alt=""> Debate</a></li>
-                    <li> <a href="classificacao.html"> <img src="css/assets/icone-podio.png" alt=""> Classificação</a>
-                    </li>
-                    <li class="agora"><a href="enquetes.html"> <img src="css/assets/icone-enquete.png" alt="">
-                            Enquetes</a></li>
-                    <!-- <li> <a href="index.html">Sair</a></li> -->
-                    <div class="btn-logout" onclick="limparSessao()">
-                        <h3>Sair</h3>
+            <!-- ENQUETE -->
+            <div class="conteiner-enq">
+
+                <div class="pegatudo">
+
+                    <!-- GRAFICOOOOO -->
+
+                    <div class="analytic">
+
+                        <div class="mensagem">
+                            <p>Jogadores preferidos dos usuarios cadastrados:</p>
+
+                        </div>
+
+                        <div class="conteiner-grafico">
+                            <div class="graph">
+                                <canvas id="canvas_grafico"></canvas>
+                            </div>
+                        </div>
+
+
                     </div>
 
-                </ul>
-            </div>
 
+                    <!-- VOTAÇÃO -->
+
+                    <div class="escrita">
+                        <h1>VOTE AQUI PARA O MELHOR JOGADOR DE 2022 (máx. 5 votos por usuário)</h1>
+                    </div>
+
+                    <div class="imagens">
+
+                        <!-- messi -->
+                        <label for="ipt_messi">
+                            <div class="foto_messi">
+                                <input type="checkbox" id="ipt_messi">
+                            </div>
+                        </label>
+
+                        <!-- ney  -->
+                        <label for="ipt_neymar">
+                            <div class="foto_neymar">
+                                <input type="checkbox" id="ipt_neymar">
+                            </div>
+                        </label>
+
+                        <!-- veiga -->
+                        <label for="ipt_veiga">
+                            <div class="foto_veiga">
+                                <input type="checkbox" id="ipt_veiga">
+                            </div>
+                        </label>
+
+
+                    </div>
+
+                    <div class="votacao">
+                        <button onclick="registrar()"><span>Registrar voto</span></button>
+                    </div>
+
+
+                    <!-- MENSAGENS -->
+                    <div class="resultado">
+
+                        <div class="result-final">
+
+                            <div id="mensagem" class="msg"></div>
+                            <br>
+                            <div id="final" class="finaleira"></div>
+
+                        </div>
+
+                        <div class="acabou"> <span id="vencedor"></span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <!-- ENQUETE -->
-        <div class="conteiner-enq">
+        <!-- RODAPÉ -->
 
-            <div class="pegatudo">
+        <footer>
 
-                <!-- GRAFICOOOOO -->
+            <div class="conteiner-rodape">
 
-                <div class="analytic">
+                <div class="rodape">
 
-                    <div class="mensagem">
-                        <p>Jogadores preferidos dos usuarios cadastrados:</p>
+                    <p>Projeto feito com amor por: Raul Meira de Souza</p>
+
+                    <div class="conteudo">
+
+                        <p>Me siga nas redes sociais</p>
+
+                        <div class="redes">
+
+                            <div class="insta"><a href="https://www.instagram.com/_raulmz/" class="imagem"><img
+                                        src="css/assets/icone-instagram.png" alt=""></a></div>
+
+                            <div class="face"><a href="https://www.facebook.com/raul.meira2/" class="imagem"><img
+                                        src="css/assets/icone-facebook.jpg" alt=""></a></div>
+
+                            <div class="linkedin"><a href="https://www.linkedin.com/in/raul-meira-de-souza-3180b61b2/"
+                                    class="imagem"><img src="css/assets/icone-linkedin.png" alt=""></a></div>
+
+                            <div class="github"> <a href="https://github.com/RaulMeira" class="imagem"> <img
+                                        src="css/assets/icone-github.png" alt="">
+                                </a></div>
+                        </div>
 
                     </div>
 
-                    <div class="conteiner-grafico">
-                        <div class="graph">
-                            <canvas id="canvas_grafico"></canvas>
-                        </div>
-                    </div>
-
-
                 </div>
 
-
-                <!-- VOTAÇÃO -->
-
-                <div class="escrita">
-                    <h1>VOTE AQUI PARA O MELHOR JOGADOR DE 2022 (máx. 5 votos por usuário)</h1>
-                </div>
-
-                <div class="imagens">
-
-                    <!-- messi -->
-                    <label for="ipt_messi">
-                        <div class="foto_messi">
-                            <input type="checkbox" id="ipt_messi">
-                        </div>
-                    </label>
-
-                    <!-- ney  -->
-                    <label for="ipt_neymar">
-                        <div class="foto_neymar">
-                            <input type="checkbox" id="ipt_neymar">
-                        </div>
-                    </label>
-
-                    <!-- veiga -->
-                    <label for="ipt_veiga">
-                        <div class="foto_veiga">
-                            <input type="checkbox" id="ipt_veiga">
-                        </div>
-                    </label>
-
-
-                </div>
-
-                <div class="votacao">
-                    <button onclick="registrar()"><span>Registrar voto</span></button>
-                </div>
-
-
-                <!-- MENSAGENS -->
-                <div class="resultado">
-
-                    <div class="result-final">
-
-                        <div id="mensagem" class="msg"></div>
-                        <br>
-                        <div id="final" class="finaleira"></div>
-
-                    </div>
-
-                    <div class="acabou"> <span id="vencedor"></span>
-                    </div>
-
-
-                </div>
             </div>
 
-        </div>
+
+        </footer>
 
     </div>
 
 </body>
 
 </html>
+
 
 <script>
 
@@ -253,7 +297,7 @@
                 {
                     label: "Votos",
                     borderColor: "black",
-                    backgroundColor: "gray",
+                    backgroundColor: "green",
                     data: [],
                 },
             ],
