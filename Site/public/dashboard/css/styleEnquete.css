@@ -6,8 +6,8 @@
     height: max-content;
     
 }
-
-/* ENQUETES */
+ 
+/* ENQUETES */ 
 .conteiner-enq{
     display: flex;
     flex-direction: column;
@@ -25,23 +25,47 @@
 }
 
 
-/* cards */
-.jog-fav{
+/* GRAFICO */
+.analytic{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 5vh;
 }
-.card-messi{
-    height: 25vh;
-    background-color: aqua;
-    width: 15vw
+
+.mensagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4vh;
+    font-family: Stencil Std, fantasy;
+}
+
+.conteiner-grafico {
+    height: max-content;
+    width: max-content;
+    padding: 1vh 1vw;
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border: double 1.5vh black;
+    border-radius: 4vh;
+}
+.graph{
+    height: max-content;
+    width: max-content;
 }
 
 
+/* votação */
 .escrita{
     font-size: 2vh;
     color: rgb(0, 0, 0);
     text-align: center;
+    font-family: Stencil Std, fantasy;
+    margin-top: 5vh;
 }
 
 .imagens{
@@ -55,8 +79,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30vh;
-    width: 20vw;
+    height: 25vh;
+    width: 15vw;
 }
 
 .foto_neymar{
@@ -64,8 +88,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30vh;
-    width: 20vw;
+    height: 25vh;
+    width: 15vw;
 }
 
 .foto_veiga{
@@ -73,15 +97,68 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30vh;
-    width: 20vw;
-}
-.imagens button{
-    border: none;
-    cursor: pointer;
+    height: 25vh;
+    width: 15vw;
 }
 
 
 .votacao{
-    margin-top: 5vh;
+    margin-top: 3vh;
+    align-items: center;
+    text-align: center;
 }
+
+.resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.result-final{
+    font-size: 3vh;
+}
+
+.acabou{
+    margin-top: 5vh;
+    font-size: 3vh;
+}
+
+.acabou b{
+    font-size: 4vh;
+}
+
+/* botao */
+button {
+    cursor: pointer;
+    margin-top: 2vh;
+    padding: 0.5vh 0.5vw;
+    width: 11vw;
+    height: 5.7vh;
+    font-size: 2.5vh;
+    font-weight: 600;
+    border: 0.3vh black solid;
+    border-radius: 3vh;
+  }
+  
+  button span {
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5vh;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 3vh;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

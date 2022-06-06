@@ -25,11 +25,8 @@ function buscarUltimasMedidas(idAquario, limite_linhas) {
 
     } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
         instrucaoSql = `
-        
-        select sum(chave) as chave, DATE_FORMAT(date_add(momento, INTERVAL second(momento) * -1 SECOND),'%H:%i:%s') 
-        as momento_grafico from medida where fk_aquario = ${idAquario} 
-        group by date_add(momento, INTERVAL second(momento) * -1 SECOND)
-        order by id desc limit ${limite_linhas};`;
+        select votacao.nomeJogador as jogador, count(fkjogador) as contagem from usuario join votacao on fkjogador = idvotacao
+group by nomeJogador order by nomeJogador;`;
 
     } else {
         console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");

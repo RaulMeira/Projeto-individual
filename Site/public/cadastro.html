@@ -68,13 +68,14 @@
                 <br>
 
                 Selecione o seu jogador favorito:
+                <br>
                 <select name="" id="jog_input">
-                    <option value="-">--</option>
-                    <option value="messi">Messi</option>
-                    <option value="neymar">Neymar</option>
-                    <option value="veiga">Veiga</option>
-
+                    <option value="-">Selecione</option>
+                    <option value="1">Messi</option>
+                    <option value="2">Neymar</option>
+                    <option value="3">Veiga</option>
                 </select>
+                <br>
                 <button onclick="cadastrar()" class="botao"> <span> Junte-se a nós </span></button>
                 <br>
                
@@ -113,7 +114,7 @@
         var confirmacaoSenhaVar = senha_confirmacao_input.value;
         var jogVar = jog_input.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || jogVar == "-") {
+        if (nomeVar == "" || emailVar == "" || cpfVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || jogVar == "-") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir!";
 

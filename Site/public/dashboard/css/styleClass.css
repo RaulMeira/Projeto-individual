@@ -1,4 +1,4 @@
-.banner-clas{
+.banner-clas {
     display: flex;
     flex-direction: row;
     background-color: rgb(255, 255, 255);
@@ -7,7 +7,7 @@
 }
 
 /* ANALITYCS */
-.conteiner-class{
+.conteiner-class {
     display: flex;
     flex-direction: row;
     height: max-content;
@@ -16,81 +16,216 @@
     align-items: center;
 }
 
-.analitycs{
+.analitycs {
     display: flex;
     flex-direction: column;
-    height: 20vh;
-    width: 30vw;
-    
-    margin-left: 5vw;
+    height: max-content;
+    width: 40vw;
+    align-items: center;
+    margin-left: 2vw;
 
 }
- 
+
 /* cards */
-.card-z4{
-    height: 18vh;
+.analitycs .legenda p {
+    margin-top: -50vh;
+    font-family:Stencil Std, fantasy;
+    font-size: 5vh;
+
+}
+
+.analitycs p{
+    font-family:Stencil Std, fantasy;
+    font-size: 2.5vh;
+}
+.card-z4 {
     background-color: red;
+    height: 8vh;
     width: 12vw;
-    margin-top: -45vh;
+    margin-top: 4vh;
     text-align: center;
     padding: 0.5vh 0.5vw;
     align-items: center;
 }
 
-.card-sul{
-    margin-top: 3vh;
-    
-    height: 18vh;
+.card-sul {
     background-color: rgb(255, 221, 0);
+    height: 8vh;
     width: 12vw;
-    
+    margin-top: 4vh;
     text-align: center;
     padding: 0.5vh 0.5vw;
     align-items: center;
 }
 
-.card-pre{
-    height: 15vh;
+.card-pre {
     background-color: rgb(9, 255, 0);
-    width: 10vw;
+    height: 8vh;
+    width: 12vw;
+    margin-top: 4vh;
+    text-align: center;
+    padding: 0.5vh 0.5vw;
+    align-items: center;
 }
 
-.card-g4{
-    height: 15vh;
-    background-color: rgb(0, 255, 76);
-    width: 10vw;
+.card-g4 {
+
+    background-color: rgb(2, 71, 2);
+    height: 8vh;
+    width: 12vw;
+    margin-top: -40vh;
+    text-align: center;
+    padding: 0.5vh 0.5vw;
+    align-items: center;
+}
+
+/* pergunta e resposta */
+.amais{
+    height: max-content;
+    width: 15vw;
 }
 
 /* CLASSIFICAÇÃO */
 
-.classificacao{
-    padding: 1vh 1w;
-    margin-left: 13vw;
+.classificacao {
+    padding: 1vh 1vw;
+    margin-left: 12vw;
+    font-family:Stencil Std, fantasy;
 }
 
-table{
+.texto-class{
+    text-align: center;
+    font-size: 7vh;
+}
+table {
     width: 50vw;
-    margin-top: 5vh;
+    margin-top: 2vh;
     height: 100vh;
     font-size: 2.5vh;
+    border-radius: 1vh;
+    padding: 1vh 0.4vw;
 }
 
-table img{
+thead{
+    font-size: 3vh;
+}
+table img {
     height: 4vh;
-    /* margin-top: 0.1vh; */
+    margin-top: 0.1vh;
     margin-right: 0.4vw;
     margin-left: -2vw;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     margin-bottom: -1vh;
 }
 
-table span{
+/* table span {
     margin-bottom: 5vh;
+} */
+
+/* ICONES */
+.palmeiras {
+    /* margin-left: 0; */
+}
+
+.atletico-mg {
+    margin-right: 1vw;
+}
+
+.gambas {
+    margin-right: 1vw;
+    margin-left: -2.5vw;
+}
+
+.coxa {
+    margin-right: 1vw;
+    margin-left: -4vw;
+}
+
+.sp {
+    margin-right: 1vw;
+    margin-left: -3vw;
+}
+
+.atletico-pr {
+    margin-right: 1vw;
+    margin-left: -2vw;
+}
+
+.bota {
+    margin-right: 1vw;
+    margin-left: -3.5vw;
+}
+
+.fla {
+    margin-right: 1vw;
+    margin-left: -3vw;
+}
+
+.santos {
+    margin-right: 1vw;
+    margin-left: -4.8vw;
+}
+
+.america {
+    margin-right: 1vw;
+    margin-left: -1.8vw;
+}
+
+.flu {
+    margin-right: 1vw;
+    margin-left: -2vw;
+}
+
+.inter {
+    margin-right: 1vw;
+    margin-left: -1.8vw;
+}
+
+.avai {
+    margin-right: 1vw;
+    margin-left: -2vw;
+}
+
+.braga {
+    margin-right: 1vw;
+    margin-left: -2vw;
+}
+
+.ceara {
+    margin-right: 1vw;
+    margin-left: -2vw;
+}
+
+.goias {
+    margin-right: 1vw;
+    margin-left: -2vw;
+}
+
+.cuia {
+    margin-right: 1vw;
+    margin-left: -2vw;
+}
+
+.atletico-go {
+    margin-right: 1vw;
+    margin-left: -2vw;
+}
+
+.juve {
+    margin-right: 1vw;
+    margin-left: -2vw;
+}
+
+.fortal {
+    margin-right: 1vw;
+    margin-left: -2vw;
 }
 
 
-table, td {
+
+table,
+td {
     border: 1px solid;
 }
 
@@ -102,32 +237,34 @@ table, td {
 
 }
 
-.time{
+.time {
     border-left: none;
 }
 
-table tr{
+table tr {
     margin-top: 5vh;
     text-align: center;
 }
 
-td{
+td {
     padding: 1vh 0.5vw;
     text-align: center;
 }
 
 
-.g4{
+.g4 {
     background-color: rgb(2, 71, 2);
 }
 
-.pre{
+.pre {
     background-color: rgb(9, 255, 0);
 }
-.sula{
+
+.sula {
     background-color: rgb(255, 221, 0);
 }
-.z4{
+
+.z4 {
     background-color: rgb(255, 0, 0);
 
 }

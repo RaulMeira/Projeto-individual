@@ -63,6 +63,7 @@ body {
     background: rgba(177, 176, 176, 0.151);
     backdrop-filter: blur(8.5vh);
     -webkit-backdrop-filter: blur(8.5vh);
+    border-radius: 2vh;
 
 }
 
@@ -77,6 +78,7 @@ input {
     border: solid 0.2vh black;
     margin-top: 1vh;
     width: 8vw;
+    border-radius: 1vh;
 }
 
 ::placeholder {

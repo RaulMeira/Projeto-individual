@@ -8,6 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styleHeaderDash.css">
     <link rel="stylesheet" href="css/styleEnquete.css">
+
+    <script type="text/javascript" src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
+
 </head>
 
 <body onload="validarSessao(), atualizarFeed()" style="background-color: #161618;">
@@ -30,9 +33,11 @@
 
             <div class="menu-itens">
                 <ul>
-                    <li> <a href="mural.html">Debate</a></li>
-                    <li> <a href="classificacao.html">Classificação</a></li>
-                    <li class="agora"><a href="enquetes.html">Enquetes</a></li>
+                    <li> <a href="mural.html"> <img src="css/assets/icone-debate.png" alt=""> Debate</a></li>
+                    <li> <a href="classificacao.html"> <img src="css/assets/icone-podio.png" alt=""> Classificação</a>
+                    </li>
+                    <li class="agora"><a href="enquetes.html"> <img src="css/assets/icone-enquete.png" alt="">
+                            Enquetes</a></li>
                     <!-- <li> <a href="index.html">Sair</a></li> -->
                     <div class="btn-logout" onclick="limparSessao()">
                         <h3>Sair</h3>
@@ -42,41 +47,35 @@
             </div>
 
         </div>
+
         <!-- ENQUETE -->
         <div class="conteiner-enq">
 
             <div class="pegatudo">
 
+                <!-- GRAFICOOOOO -->
 
                 <div class="analytic">
 
-                    <div class="jog-fav">
+                    <div class="mensagem">
+                        <p>Jogadores preferidos dos usuarios cadastrados:</p>
 
-                        <p>Os jogadores favoritos dos usuarios:</p>
+                    </div>
 
-                        <div class="card-messi">
-                            messi
-                            <p id="temp_aquario_1"></p>
+                    <div class="conteiner-grafico">
+                        <div class="graph">
+                            <canvas id="canvas_grafico"></canvas>
                         </div>
-
-                        <div class="card-veiga">
-                            veiga
-                            <p id="temp_aquario_2"></p>
-                        </div>
-
-                        <div class="card-ney">
-                            ney
-                            <p id="temp_aquario_3"></p>
-                        </div>
-
-
                     </div>
 
 
                 </div>
 
+
+                <!-- VOTAÇÃO -->
+
                 <div class="escrita">
-                    <h1>VOTE AQUI PARA O MELHOR JOGADOR DE 2022</h1>
+                    <h1>VOTE AQUI PARA O MELHOR JOGADOR DE 2022 (máx. 5 votos por usuário)</h1>
                 </div>
 
                 <div class="imagens">
@@ -106,22 +105,22 @@
                 </div>
 
                 <div class="votacao">
-                    <button onclick="registrar()">Registrar voto</button>
+                    <button onclick="registrar()"><span>Registrar voto</span></button>
                 </div>
 
+
+                <!-- MENSAGENS -->
                 <div class="resultado">
 
-                    <div class="contagem">
+                    <div class="result-final">
+
+                        <div id="mensagem" class="msg"></div>
+                        <br>
+                        <div id="final" class="finaleira"></div>
 
                     </div>
 
-                    <div class="botao-final">
-
-                        <span id="mensagem"></span>
-                        <br>
-                        <span id="final"></span>
-                        <br>
-                        <span id="vencedor"></span>
+                    <div class="acabou"> <span id="vencedor"></span>
                     </div>
 
 
@@ -138,12 +137,13 @@
 
 <script>
 
+    // RESULTADOS DA ENQUETE
     var vt_votos = []
     var vt_messi = []
     var vt_neymar = []
     var vt_veiga = []
     var maior = 0
-    var nmaiorNome = ''
+    var maiorNome = ''
 
 
     function registrar() {
@@ -154,6 +154,7 @@
         }
 
         else {
+
 
             if (ipt_messi.checked === true) {
 
@@ -167,7 +168,6 @@
 
                 vt_neymar.push(1)
                 ipt_neymar.checked = ""
-
                 vt_votos.push("neymar")
 
             }
@@ -181,10 +181,10 @@
 
             }
 
-            mensagem.innerHTML = (`Quantidade de votos: ${vt_votos.length} <br>
-            Quantidade que gostam do Messi: ${vt_messi.length} <br>
-            Quantidade que gostam do Neymar: ${vt_neymar.length} <br>
-            Quantidade que gostam do Veiga: ${vt_veiga.length} <br>`)
+            mensagem.innerHTML = `Quantidade de votos: ${vt_votos.length} <br>
+                Votos para o Messi: ${vt_messi.length} <br>
+                Votos para o Neymar: ${vt_neymar.length} <br>
+                Votos para o Veiga: ${vt_veiga.length} <br>`
 
             final.innerHTML = ''
             vencedor.innerHTML = ''
@@ -193,25 +193,30 @@
 
                 if (vt_messi.length > maior) {
                     maior = vt_messi.length
-                    maiorNome = "messi"
+                    maiorNome = "Messi"
                 }
                 else {
                     if (vt_neymar.length > maior) {
                         maior = vt_neymar.length
-                        maiorNome = "neymar"
-                        
+                        maiorNome = "Neymar"
+
                     }
                     else {
                         if (vt_veiga.length > maior) {
                             maior = vt_veiga.length
-                            maiorNome = "veiga"
+                            maiorNome = "Veiga"
                         }
                     }
                 }
 
-                final.innerHTML += ` o ${index} voto foi no ${vt_votos[index - 1]} <br>
-                `
-                vencedor.innerHTML = `O melhor jogador de 2022 segundo a enquete foi: ${maiorNome}`
+                if (index == 6) {
+                    alert("Voce chegou ao limite de votos por usuario")
+                    break
+                }
+
+                final.innerHTML += ` O ${index}º voto foi no ${vt_votos[index - 1]} <br>`
+
+                vencedor.innerHTML = `O melhor jogador de 2022 segundo a enquete foi: <b>${maiorNome}</b>`
 
             }
         }
@@ -219,112 +224,63 @@
     }
 
 
+    // GRAFICO
+    window.onload = obterDadosGrafico(1);
 
-    function atualizacaoPeriodica() {
-        obterdados(1);
-        obterdados(2);
-        obterdados(3);
-        obterdados(4);
-
-        function sendData() {
-            var http = new XMLHttpRequest();
-            http.open('POST', 'http://localhost:3000/api/sendData', false);
-            http.send(null);
-        }
-
-        setInterval(() => {
-            sendData();
-        }, 2000);
-        setTimeout(atualizacaoPeriodica, 5000);
-    }
-
-    function obterdados(idAquario) {
-        fetch(`/medidas/tempo-real/${idAquario}`)
-            .then(resposta => {
-
-                if (resposta.ok) {
-                    resposta.json().then(resposta => {
-
+    function obterDadosGrafico(idAquario) {
+        fetch('/medidas/ultimas/${idAquario}', { cache: "no-store" })
+            .then(function (response) {
+                if (response.status == 200) {
+                    response.json().then(function (resposta) {
                         console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-
-                        var dados = {
-                            chave: resposta[0].chave,
-                        }
-
-                        alertar(resposta[0].chave, idAquario);
+                        plotarGrafico(resposta, idAquario);
                     });
                 } else {
-
-                    console.error('Nenhum dado encontrado ou erro na API');
+                    console.error("Nenhum dado encontrado ou erro na API");
                 }
             })
             .catch(function (error) {
-                console.error(`Erro na obtenção dos dados do aquario p/ gráfico: ${error.message}`);
+                console.error(
+                    `Erro na obtenção dos dados p / gráfico: ${error.message}`
+                );
             });
-
     }
 
-    function alertar(chave, idAquario) {
-        var limites = {
-            critico: 30,
-            emergencia: 27,
-            alerta: 23,
-            ideal: 15,
-            alerta_vazio: 10,
-            emergencia_vazio: 5,
-            vazio: 0
+    function plotarGrafico(resposta, idAquario) {
+        var dados = {
+            labels: [],
+            datasets: [
+                {
+                    label: "Votos",
+                    borderColor: "black",
+                    backgroundColor: "gray",
+                    data: [],
+                },
+            ],
         };
 
-        var classe_chave = 'cor-alerta';
-
-        if (chave >= limites.critico) {
-            classe_chave = 'cor-alerta perigo-critico';
-            console.log("caiu no 1")
-        }
-        else if (chave < limites.critico && chave >= limites.emergencia) {
-            classe_chave = 'cor-alerta alerta-emergencia';
-            console.log("caiu no 2")
-        }
-        else if (chave < limites.emergencia && chave >= limites.alerta) {
-            classe_chave = 'cor-alerta alerta-alerta';
-            console.log("caiu no 3")
-        }
-        else if (chave < limites.alerta && chave >= limites.ideal) {
-            classe_chave = 'cor-alerta alerta-ideal';
-            console.log("caiu no 4")
-        }
-        else if (chave < limites.ideal && chave >= limites.alerta_vazio) {
-            classe_chave = 'cor-alerta alerta-alerta_vazio';
-            console.log("caiu no 6")
-        }
-        else if (chave < limites.alerta_vazio && chave >= limites.emergencia_vazio) {
-            classe_chave = 'cor-alerta alerta-emergencia_vazio';
-            console.log("caiu no 7")
-        }
-        else if (chave < limites.emergencia_vazio) {
-            classe_chave = 'cor-alerta alerta-vazio';
-            console.log("caiu no 8")
+        for (i = 0; i < resposta.length; i++) {
+            var registro = resposta[i];
+            dados.labels.push(registro.jogador);
+            dados.datasets[0].data.push(registro.contagem);
         }
 
-        var card;
-
-        if (idAquario == 1) {
-            temp_aquario_1.innerHTML = chave + ` pessoas preferem o messi`;
-            card = card_1
-        } else if (idAquario == 2) {
-            temp_aquario_2.innerHTML = chave + ` pessoas preferem o veiga`;
-            card = card_2
-        } else if (idAquario == 3) {
-            temp_aquario_3.innerHTML = chave + ` pessoas preferem o neymar`;
-            card = card_3
-        }
-        // else if (idAquario == 4) {
-        //     temp_aquario_4.innerHTML = chave + ` pessoas passaram pelo corredor 4 no último minuto`;
-        //     card = card_4
-        // }
-
-        // alterando
-        card.className = classe_chave;
+        var ctx = canvas_grafico.getContext("2d");
+        window.grafico_linha = new Chart(ctx, {
+            type: "bar",
+            data: dados,
+            options: {
+                scales: {
+                    yAxes: [
+                        {
+                            ticks: {
+                                beginAtZero: true,
+                            },
+                        },
+                    ],
+                },
+            },
+        });
 
     }
 

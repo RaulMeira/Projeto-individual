@@ -56,10 +56,9 @@ body {
     color: black;
     font-family: Stencil Std, fantasy;
     border: double black 1.2vh;
-    
     background-color: white;
-   
     padding: 1vh 0.5vw;
+    border-radius: 1vh;
 }
 
 .fotos-medio {

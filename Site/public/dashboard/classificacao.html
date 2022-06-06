@@ -31,9 +31,9 @@
 
             <div class="menu-itens">
                 <ul>
-                    <li> <a href="mural.html">Debate</a></li>
-                    <li class="agora"> <a href="classificacao.html">Classificação</a></li>
-                    <li><a href="enquetes.html">Enquetes</a></li>
+                    <li> <a href="mural.html">  <img src="css/assets/icone-debate.png" alt=""> Debate</a></li>
+                    <li class="agora"> <a href="classificacao.html"> <img src="css/assets/icone-podio.png" alt=""> Classificação</a></li>
+                    <li><a href="enquetes.html"> <img src="css/assets/icone-enquete.png" alt=""> Enquetes</a></li>
                     <!-- <li> <a href="index.html">Sair</a></li> -->
                     <div class="btn-logout" onclick="limparSessao()">
                         <h3>Sair</h3>
@@ -44,19 +44,18 @@
 
         </div>
 
-        
+
         <div class="conteiner-class">
 
             <!-- ANALITYCS -->
             <div class="analitycs">
 
-                <div class="card-z4">
-                    <p>REBAIXAMENTO</p>
+                <div class="legenda">
+                    <p>LEGENDA</p>
                 </div>
 
-                <div class="card-sul">
-
-                    <p>SUL-ALMERICANA</p>
+                <div class="card-g4">
+                    <p>LIBERTADORES</p>
 
                 </div>
 
@@ -65,17 +64,38 @@
 
                 </div>
 
-                <div class="card-g4">
-                    <p>LIBERTADORES</p>
+                <div class="card-sul">
+
+                    <p>SUL-ALMERICANA</p>
 
                 </div>
 
+                <div class="card-z4">
+                    <p>REBAIXAMENTO</p>
+                </div>
+                <br>
+                <div class="amais">
 
+                    <div class="pergunta">Para qual time voce torce?
+                        <br>
+                        <input type="text" id="input" onchange="ver()">
+                    </div>
+                    <br>
+                    <div class="resposta">
+                        <div class="r1" id="msg">
+                        </div>
+                        <br>
+                        <div class="r2" id="situacao">
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="classificacao">
 
-                <div>Classificação</div>
+                <div class="texto-class">
+                    <p>CLASSIFICAÇÃO</p>
+                </div>
 
                 <table>
 
@@ -95,7 +115,7 @@
 
                         </tr>
 
-                       <!-- tr = linha -->
+                        <!-- tr = linha -->
 
                     </thead>
 
@@ -103,7 +123,9 @@
 
                         <tr class="linha1">
                             <td class="g4">1</td>
-                            <td> <img src="css/assets/classificação/icone-palmeiras.png" alt=""> <span>PALMEIRAS</span> </td>
+                            <td> <img src="css/assets/classificação/icone-palmeiras.png" alt="" class="palmeiras">
+                                <span>PALMEIRAS</span>
+                            </td>
                             <td>15</td>
                             <td>8</td>
                             <td>4</td>
@@ -113,12 +135,13 @@
                             <td>5</td>
                             <td>8</td>
 
- 
+
                         </tr>
 
                         <tr>
                             <td class="g4">2</td>
-                            <td> <img src="css/assets/classificação/icone-atleticomg.png" alt=""> Atletico MG</td>
+                            <td> <img src="css/assets/classificação/icone-atleticomg.png" alt="" class="atletico-mg">
+                                Atletico MG</td>
                             <td>15</td>
                             <td>8</td>
                             <td>4</td>
@@ -132,7 +155,8 @@
 
                         <tr>
                             <td class="g4">3</td>
-                            <td> <img src="css/assets/classificação/icone-corinthians.png" alt=""> Corinthians</td>
+                            <td> <img src="css/assets/classificação/icone-corinthians.png" alt="" class="gambas">
+                                Corinthians</td>
                             <td>15</td>
                             <td>8</td>
                             <td>4</td>
@@ -146,7 +170,7 @@
 
                         <tr>
                             <td class="g4">4</td>
-                            <td> <img src="css/assets/icone-coritiba.png" alt=""> Coritiba</td>
+                            <td> <img src="css/assets/icone-coritiba.png" alt="" class="coxa"> Coritiba</td>
                             <td>13</td>
                             <td>8</td>
                             <td>4</td>
@@ -160,7 +184,7 @@
 
                         <tr>
                             <td class="pre">5</td>
-                            <td> <img src="" alt=""> São Paulo</td>
+                            <td> <img src="css/assets/classificação/icone-sp.png" alt="" class="sp"> São Paulo</td>
                             <td>13</td>
                             <td>8</td>
                             <td>3</td>
@@ -174,7 +198,8 @@
 
                         <tr>
                             <td class="pre">6</td>
-                            <td> <img src="" alt="">  Athletico-PR</td>
+                            <td> <img src="css/assets/classificação/icone-atleticopr.png" alt="" class="atletico-pr">
+                                Athletico-PR</td>
                             <td>12</td>
                             <td>8</td>
                             <td>4</td>
@@ -188,7 +213,7 @@
 
                         <tr>
                             <td class="sula">7</td>
-                            <td> <img src="" alt=""> Botafogo</td>
+                            <td> <img src="css/assets/classificação/icone-bota.png" alt="" class="bota"> Botafogo</td>
                             <td>12</td>
                             <td>8</td>
                             <td>3</td>
@@ -202,7 +227,7 @@
 
                         <tr>
                             <td class="sula">8</td>
-                            <td> <img src="" alt=""> Flamengo </td>
+                            <td> <img src="css/assets/classificação/icone-fla.png" alt="" class="fla"> Flamengo </td>
                             <td>12</td>
                             <td>8</td>
                             <td>3</td>
@@ -216,7 +241,7 @@
 
                         <tr>
                             <td class="sula">9</td>
-                            <td><img src="" alt="">Santos</td>
+                            <td><img src="css/assets/classificação/icone-santos.png" alt="" class="santos">Santos</td>
                             <td>11</td>
                             <td>8</td>
                             <td>3</td>
@@ -230,7 +255,8 @@
 
                         <tr>
                             <td class="sula">10</td>
-                            <td><img src="" alt="">América-MG</td>
+                            <td><img src="css/assets/classificação/icone-america.png" alt="" class="america">América-MG
+                            </td>
                             <td>11</td>
                             <td>8</td>
                             <td>3</td>
@@ -244,7 +270,7 @@
 
                         <tr>
                             <td class="sula">11</td>
-                            <td> <img src="" alt=""> Fluminense</td>
+                            <td> <img src="css/assets/classificação/icone-flu.png" alt="" class="flu"> Fluminense</td>
                             <td>11</td>
                             <td>8</td>
                             <td>3</td>
@@ -258,7 +284,8 @@
 
                         <tr>
                             <td class="sula">12</td>
-                            <td><img src="" alt="">Internacional</td>
+                            <td><img src="css/assets/classificação/icone-inter.png" alt="" class="inter">Internacional
+                            </td>
                             <td>11</td>
                             <td>8</td>
                             <td>2</td>
@@ -271,8 +298,8 @@
                         </tr>
 
                         <tr>
-                            <td >13</td>
-                            <td><img src="" alt="">Avai </td>
+                            <td>13</td>
+                            <td><img src="css/assets/classificação/icone-avai.png" alt="" class="avai">Avai </td>
                             <td>10</td>
                             <td>8</td>
                             <td>3</td>
@@ -286,7 +313,8 @@
 
                         <tr>
                             <td>14</td>
-                            <td><img src="" alt="">Bragantino</td>
+                            <td><img src="css/assets/classificação/icone-redbull.png" alt="" class="braga">Bragantino
+                            </td>
                             <td>10</td>
                             <td>8</td>
                             <td>2</td>
@@ -300,7 +328,7 @@
 
                         <tr>
                             <td>15</td>
-                            <td><img src="" alt="">Ceará</td>
+                            <td><img src="css/assets/classificação/icone-ceara.png" alt="" class="ceara">Ceará</td>
                             <td>9</td>
                             <td>8</td>
                             <td>2</td>
@@ -314,7 +342,7 @@
 
                         <tr>
                             <td>16</td>
-                            <td><img src="" alt="">Goias</td>
+                            <td><img src="css/assets/classificação/icone-goias.png" alt="" class="goias">Goias</td>
                             <td>9</td>
                             <td>8</td>
                             <td>2</td>
@@ -328,7 +356,7 @@
 
                         <tr>
                             <td class="z4">17</td>
-                            <td><img src="" alt="">Cuiabá </td>
+                            <td><img src="css/assets/classificação/icone-cuia.png" alt="" class="cuia">Cuiabá </td>
                             <td>8</td>
                             <td>8</td>
                             <td>2</td>
@@ -342,7 +370,8 @@
 
                         <tr>
                             <td class="z4">18</td>
-                            <td><img src="" alt="">Atlético-GO</td>
+                            <td><img src="css/assets/classificação/icone-atleticoGO.png" alt=""
+                                    class="atletico-go">Atlético-GO</td>
                             <td>7</td>
                             <td>8</td>
                             <td>1</td>
@@ -356,7 +385,7 @@
 
                         <tr>
                             <td class="z4">19</td>
-                            <td><img src="" alt=""> Juventude</td>
+                            <td><img src="css/assets/classificação/icone-juve.png" alt="" class="juve"> Juventude</td>
                             <td>7</td>
                             <td>8</td>
                             <td>1</td>
@@ -370,7 +399,8 @@
 
                         <tr>
                             <td class="z4">20</td>
-                            <td><img src="" alt="">Fortaleza </td>
+                            <td><img src="css/assets/classificação/icone-fortaleza.png" alt="" class="fortal">Fortaleza
+                            </td>
                             <td>2</td>
                             <td>8</td>
                             <td>0</td>
@@ -393,10 +423,50 @@
         </div>
     </div>
 
-        
-
-
-
 </body>
 
 </html>
+
+<script>
+
+    var vt_time = ['PALMEIRAS', 'ATLETICO-MG', 'CORINTHIANS', 'CORITIBA', 'SÃO PAULO', 'ATHLETICO-PR',
+        'BOTAFOGO', 'FLAMENGO', 'SANTOS', 'AMÉRICA-MG', 'FLUMINENSE', 'INTERNACIONAL', 'AVAI',
+        'BRAGANTINO', 'CEARÁ', 'GOIAS', 'CUIABÁ', 'ATLÉTICO-GO', 'JUVENTUDE', 'FORTALEZA']
+
+    function ver() {
+
+        var ok = vt_time.indexOf(input.value.toUpperCase())
+
+        if (ok >= 0) {
+            msg.innerHTML = `O ${input.value} esta na ${vt_time.indexOf(input.value.toUpperCase()) + 1}º posição`
+            if (ok >= 0 && ok < 4) {
+                situacao.innerHTML = `O ${input.value} esta classificado para a libertadores`
+            }
+            else {
+                if (ok >= 4 && ok < 6) {
+                    situacao.innerHTML = `O ${input.value} esta classificado para a pré-libertadores`
+                }
+
+                if (ok > 5 && ok < 12) {
+                    situacao.innerHTML = `O ${input.value} esta classificado para a sul-americana`
+                }
+
+                if (ok >= 12 && ok < 16) {
+                    situacao.innerHTML = `O ${input.value} não chove nem molha`
+                }
+                if (ok >= 16) {
+                    situacao.innerHTML = `O ${input.value} esta rebaixado para a série B`
+                }
+
+            }
+
+        }
+
+        else {
+            alert(`O ${input.value} não esta`)
+        }
+        input.value = ''
+
+    }
+
+</script>

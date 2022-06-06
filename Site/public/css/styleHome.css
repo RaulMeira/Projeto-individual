@@ -30,6 +30,7 @@ body {
     font-family: Stencil Std, fantasy;
     color: black;
     display: flex;
+    border-radius: 1vh;
     border: double black 1.5vh;
     justify-content: center;
     background-color: white;
@@ -38,19 +39,28 @@ body {
     align-items: center;
     padding: 1vh 0.5vw;
 }
+
+.home:hover{ 
+    transition: 1s;
+    transform: rotate(3deg);
+}
+
+.conteiner-home p:hover{
+    transition: 1s;
+    transform: rotate(-3deg);
+}
+
+.titulo{
+margin-top: 1vh;
+}
+
 .conteiner-home p{
     font-size: 6vh;
     color: black;
     background-color: white;
     padding: 1vh 2vw;
-
-    /* border-radius: 5vh;
-    border: 0.5vh solid transparent; */
-    
-    /* border-top-left-radius: 50vh;
-    border-top-right-radius: 50vh; */
-
-    border-bottom: 1vh double black;
+    border: 1vh double black;
+    border-radius: 1vh;
 
 }
 
@@ -69,7 +79,7 @@ body {
     color: black;
     height: 43vh;
     width: 18vw;
-    padding: 2vh 1vw;
+    padding: 1vh 1vw;
     border: black solid 1vh;
     border-radius: 8vh;
     font-size: 3.4vh;
@@ -87,10 +97,11 @@ body {
 }
 
 .card-home p {
-    margin-top: -4vh;
-    font-size: 5.2vh;
+    /* margin-top: -4vh; */
+    font-size: 5vh;
     font-style: bold;
     font-weight: 800;
+    font-family: Stencil Std, fantasy;
 }
 
 .card-home img {
@@ -104,4 +115,15 @@ body {
     
     /* margin-left: 10vh;
     margin-top: 0.1vh; */
+}
+
+.titulo1{
+    margin-top: -4vh;
+}
+
+.titulo2{
+    margin-top: -8vh;
+}
+.titulo3{
+    margin-top: -0.2vh;
 }

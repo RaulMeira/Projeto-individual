@@ -4,9 +4,6 @@
     background-color: rgb(255, 255, 255);
 
     height: max-content;
-    /* background-image: url(assets/fundo-dash.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover; */
 
 }
 
@@ -19,18 +16,43 @@
     flex-direction: column;
     margin-bottom: 4vh;
     align-items: center;
-    height: 100vh;
+    height: max-content;
 
 }
 
 .avisos {
-    width: 70vw;
+    width: max-content;
+    height: max-content;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
 }
 
+.tudo-mural{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    height: 100vh;
+    
+}
+
+.regras{
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+}
+.regras p{
+    text-align: center;
+    font-family: Stencil Std, fantasy;
+    font-size: 4vh;
+    margin-bottom: 1vh;
+}
+.regras li{
+    margin-top: 0.5vh;
+    font-size: 3vh;
+}
 .container-mural {
     margin-left: 5vw;
     display: flex;
@@ -44,10 +66,11 @@
     -webkit-backdrop-filter: blur(20px);
     align-items: center;
     text-align: center;
-    margin-top: 1vh;
+  
     padding: 0.5vh 0.5vw;
     border: transparent 0.5vh solid;
     border-radius: 5vh;
+    margin-top:2vh;
 }
 
 .container-mural h1 {
@@ -128,14 +151,21 @@ textarea {
 .area-debate {
     display: flex;
     flex-direction: column;
-    width: 25vw;
+    width: 28vw;
     border: transparent 0.5vh solid;
     border-radius: 5vh;
-    background-color: blueviolet;
+  
+    background: linear-gradient(145deg, #8e8e8e, #a9a9a9);
+    box-shadow:  5px 5px 10px #7e7e7e,
+                 -5px -5px 10px #bebebe;
     text-align: center;
-    margin-top: 2vh;
-    padding: 0.5vh 0.5vw;
+    margin-top: 5vh;
+    padding: 2vh 1vw;
     height: max-content;
+    margin-left: 10vw;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
 
 .feed-container {
@@ -143,10 +173,13 @@ textarea {
     /* background-color: #212124; */
     border-radius: 5px;
     margin-bottom: 2vh;
+    padding: 1vh 1vw;
 
 }
 
 .div-results {
     width: 100%;
     height: max-content;
+    padding: 1vh 1vw;
+    margin-top: -5vh;
 }
